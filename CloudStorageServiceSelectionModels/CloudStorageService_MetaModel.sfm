@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicefeaturemodel:Service xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:servicefeaturemodel="http://servicefeaturemodel/1.0" id="b22f60a7-650f-4163-ace8-8fc46048a3f2">
+  <representedBy id="b0f2213d-cc13-461b-b3a2-b53579e62bf1">
+    <containsFeatures xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="CloudStorageService" id="bb7603cb-f93a-4005-86f9-589d6af7a9e8">
+      <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Safety" id="4f610893-0039-4b0f-9bfe-2c76e12425dd">
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Versioning" id="4a054464-0d89-4f9b-9a76-eea045947709" featureType="AbstractFeature"/>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Data encryption" id="d8457879-395a-4558-8cc6-a47cca5dc28d" featureType="AbstractFeature"/>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Provider certifications" id="2e46fc76-f200-439a-8edc-abc3537baaaf" featureType="AbstractFeature"/>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="User management" id="6caa54b0-1afb-41a3-a3c3-fe07f0f22503" featureType="AbstractFeature"/>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Recovery" id="599e1191-c08b-4116-a4ae-0be0402fd2b9" featureType="AbstractFeature"/>
+      </decomposesInto>
+      <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Usability" id="eade43e9-d995-4033-99fb-43b0dea955c8">
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Service integration" id="6a46046b-d9f6-486e-a04f-7dd0dacd8979" featureType="AbstractFeature"/>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Clients for mobile devices" id="3988f5b7-b75c-4237-81b2-d998b8cd4d28" featureType="AbstractFeature"/>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="E-Mail attachment delivery" id="7122cdf7-c8d1-44ac-8746-bbb9bcb59668" featureType="AbstractFeature"/>
+      </decomposesInto>
+      <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Plans" id="490a9405-b075-4cce-9be1-c7e8174d4727" featureType="AbstractFeature"/>
+    </containsFeatures>
+  </representedBy>
+  <enables/>
+  <has>
+    <contains name="Storage capacity [GByte]" toBeEvaluated="true" description="Storage capacity is provided in GByte." customAttributeTypePriority="3"/>
+    <contains name="Monthly cost [$/month/user]" scaleOrder="LowerIsBetter" toBeEvaluated="true" description="Cost in dollar per user per month." customAttributeTypePriority="3"/>
+    <contains name="Number of users"/>
+    <contains name="Set up cost [$]" description="One time / fix cost in dollar for setting up the service."/>
+  </has>
+</servicefeaturemodel:Service>

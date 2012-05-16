@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicefeaturemodel:Service xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:servicefeaturemodel="http://servicefeaturemodel/1.0" id="b22f60a7-650f-4163-ace8-8fc46048a3f2">
+  <representedBy id="b8a0bcbc-1b47-412e-9e4e-7b6dfc130fd5">
+    <containsFeatures xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Box.net" id="943d9e77-f486-474f-bba8-d15114f9e898">
+      <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Safety" id="3dd6b5ba-4ede-4c03-a39c-ca8ccca27f81">
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Versioning" id="1fb97761-fe24-4182-b523-e5e8762e07a8" featureType="AbstractFeature">
+          <decomposesInto xsi:type="servicefeaturemodel:OptionalServiceFeature" name="Version history" id="6b2102e7-a0f8-4624-a525-07a3d6352818" featureType="InstanceFeature"/>
+        </decomposesInto>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Data encryption" id="6ebe917f-600a-40d9-8809-46272d4b13e8" featureType="AbstractFeature">
+          <decomposesInto xsi:type="servicefeaturemodel:OptionalServiceFeature" name="256-bit SSL" id="306b9b7f-04d3-44bb-8438-28da3cde1e03" featureType="InstanceFeature"/>
+          <decomposesInto xsi:type="servicefeaturemodel:OptionalServiceFeature" name="256-bit AES" id="7ddbab06-fa27-421a-899c-536f1e6b8a6f" featureType="InstanceFeature"/>
+        </decomposesInto>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Provider certifications" id="3021c121-ad38-4884-b064-8bb16183f947" featureType="AbstractFeature">
+          <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="SAS 70 Type II Certified" description="Amazon is a SAS 70 compliant service. More information on their speci7ic security features and policies is available here -­‐ http://aws.amazon.com/security/." id="d6127100-480e-4379-81c3-7e078f1cc318" featureType="InstanceFeature"/>
+        </decomposesInto>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="User management" id="c629f352-41df-48c4-8929-baec24d6de0a" featureType="AbstractFeature">
+          <decomposesInto xsi:type="servicefeaturemodel:OptionalServiceFeature" name="User management console" description="Provision and manage users from central console, visibility on user access time and storage utilization, purge users (removing them from the Team and prevent any additional access to shared Files)." id="3db46e39-0647-4c49-bd48-a7ecf35339c6" featureType="InstanceFeature"/>
+        </decomposesInto>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Recovery" id="7910adbc-11dd-4755-8acc-ba554eb121a9" featureType="AbstractFeature"/>
+      </decomposesInto>
+      <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Usability" id="95f822ad-5b3d-4f48-b2c1-bbdb5e7653c6">
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Service integration" id="00523c94-0f87-4343-914a-8526c6af98f8" featureType="AbstractFeature">
+          <decomposesInto xsi:type="servicefeaturemodel:OptionalServiceFeature" name="Google Apps Integration" id="92404639-efcc-4b9a-85e4-395198f99fa8" featureType="InstanceFeature"/>
+        </decomposesInto>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Clients for mobile devices" id="ce011949-15fa-410b-a7e7-6672ce20ee59" featureType="AbstractFeature">
+          <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="iOS" id="4344396d-c4e2-4dc5-b733-ddf0419d4fb2" featureType="InstanceFeature"/>
+          <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Blackberry" id="60c0ab46-21d9-4007-b127-3703a047190a" featureType="InstanceFeature"/>
+          <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Android" id="3a100000-94ff-48a7-8190-738da5c3c3cc" featureType="InstanceFeature"/>
+        </decomposesInto>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="E-Mail attachment delivery" id="20eeb2a7-ef4b-491e-b7b7-3cd5be0a5617" featureType="AbstractFeature"/>
+      </decomposesInto>
+      <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Plans" id="8ac8ecc6-c5e8-4573-a087-47c90aa7dbbb" featureType="AbstractFeature">
+        <containsVariant xsi:type="servicefeaturemodel:XOR">
+          <contains name="Personal" id="d8ef215f-dd1b-4557-9c29-45ebd235d2ea" featureType="InstanceFeature">
+            <describedBy instantiationValue="0" ofAttributeType="//@has/@contains.1" id="40602aa3-25f7-4731-912d-a1adab800a10"/>
+            <describedBy instantiationValue="5" ofAttributeType="//@has/@contains.0" id="7f65f31a-5ba8-4806-8322-799a371c5159"/>
+            <describedBy instantiationValue="1" ofAttributeType="//@has/@contains.2" id="574a3237-bdcb-4eab-b605-77d721e23f58"/>
+            <containsExcludes excludesServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.0/@decomposesInto.0"/>
+            <containsExcludes excludesServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.3/@decomposesInto.0"/>
+            <containsExcludes excludesServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.0/@decomposesInto.0"/>
+            <containsExcludes excludesServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.1/@decomposesInto.1"/>
+            <containsExcludes excludesServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.1/@decomposesInto.0"/>
+          </contains>
+          <contains name="Personal 25" id="b01992eb-f9dd-4594-98af-e04cd9302947" featureType="InstanceFeature">
+            <describedBy instantiationValue="9.99" ofAttributeType="//@has/@contains.1" id="496496e0-dc47-426c-b21e-c721ba905949"/>
+            <describedBy instantiationValue="25" ofAttributeType="//@has/@contains.0" id="1263bfb3-82af-495a-8581-a4f0faf3ef73"/>
+            <describedBy instantiationValue="1" ofAttributeType="//@has/@contains.2" id="630d7124-842f-423f-84b9-758f1b904e74"/>
+            <containsExcludes excludesServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.0/@decomposesInto.0"/>
+            <containsExcludes excludesServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.3/@decomposesInto.0"/>
+            <containsExcludes excludesServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.0/@decomposesInto.0"/>
+            <containsExcludes excludesServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.1/@decomposesInto.1"/>
+            <containsExcludes excludesServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.1/@decomposesInto.0"/>
+          </contains>
+          <contains name="Personal 50" id="d5b3ca7e-ac7a-4ab7-a202-f30f7dfed1ea" featureType="InstanceFeature">
+            <describedBy instantiationValue="19.99" ofAttributeType="//@has/@contains.1" id="dd143bfa-a08a-4163-97ed-a47e938ac62e"/>
+            <describedBy instantiationValue="50" ofAttributeType="//@has/@contains.0" id="39fbec30-cbc7-4a06-934c-0aec0576cd5f"/>
+            <describedBy instantiationValue="1" ofAttributeType="//@has/@contains.2" id="b37c3de7-0da9-4a55-b584-3b65b14fcce7"/>
+            <containsExcludes excludesServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.0/@decomposesInto.0"/>
+            <containsExcludes excludesServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.3/@decomposesInto.0"/>
+            <containsExcludes excludesServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.0/@decomposesInto.0"/>
+            <containsExcludes excludesServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.1/@decomposesInto.1"/>
+            <containsExcludes excludesServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.1/@decomposesInto.0"/>
+          </contains>
+          <contains name="Business" id="e82276ef-8d2e-4c9a-bf73-c197c3bb4229" featureType="InstanceFeature">
+            <describedBy instantiationValue="15" ofAttributeType="//@has/@contains.1" id="4bc1c5f3-0e65-4e76-abef-357806f3edcb"/>
+            <describedBy instantiationValue="1000" ofAttributeType="//@has/@contains.0" id="d912d2ca-b78f-42c8-bcc0-e6d1039fd5b3"/>
+            <describedBy instantiationValue="3" ofAttributeType="//@has/@contains.2" id="3d4883ae-7f4d-40d5-a767-98897669b366"/>
+            <containsRequires requiresServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.0/@decomposesInto.0"/>
+            <containsRequires requiresServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.0/@decomposesInto.0"/>
+            <containsRequires requiresServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.3/@decomposesInto.0"/>
+            <containsExcludes excludesServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.1/@decomposesInto.1"/>
+            <containsExcludes excludesServiceFeature="//@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.1/@decomposesInto.0"/>
+          </contains>
+        </containsVariant>
+      </decomposesInto>
+    </containsFeatures>
+  </representedBy>
+  <enables>
+    <contains name="1" id="1" groups="//@representedBy/@containsFeatures.0 //@representedBy/@containsFeatures.0/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.2/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.3 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.4 //@representedBy/@containsFeatures.0/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.1/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.1/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.1/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.2/@containsVariant/@contains.0">
+      <describedBy instantiationValue="5" ofAttributeType="//@has/@contains.0" id="6539bba4-343e-42e4-8271-3b58124041eb"/>
+      <describedBy instantiationValue="0" ofAttributeType="//@has/@contains.1" id="010f8be8-281f-4d88-9346-95faf022fb6e"/>
+      <describedBy instantiationValue="1" ofAttributeType="//@has/@contains.2" id="4ca2e955-9d04-479e-be22-1731249de2de"/>
+      <describedBy instantiationValue="0" ofAttributeType="//@has/@contains.3" id="ccd3e696-ace3-42e9-9db7-611590106496"/>
+    </contains>
+    <contains name="2" id="2" groups="//@representedBy/@containsFeatures.0 //@representedBy/@containsFeatures.0/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.0/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.2/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.3 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.3/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.4 //@representedBy/@containsFeatures.0/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.0/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.1/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.1/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.1/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.2/@containsVariant/@contains.3">
+      <describedBy instantiationValue="1000" ofAttributeType="//@has/@contains.0" id="ec51db86-90b7-47fe-9ee2-0bc1a6e08a5f"/>
+      <describedBy instantiationValue="15" ofAttributeType="//@has/@contains.1" id="40006413-5465-4431-a28b-f28c7c27eaa8"/>
+      <describedBy instantiationValue="3" ofAttributeType="//@has/@contains.2" id="9543c07c-c3f8-4350-aa5d-954a5760ceb7"/>
+      <describedBy instantiationValue="0" ofAttributeType="//@has/@contains.3" id="fb0c0ac2-c5d8-4318-b9b5-a7a209456959"/>
+    </contains>
+    <contains name="3" id="3" groups="//@representedBy/@containsFeatures.0 //@representedBy/@containsFeatures.0/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.2/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.3 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.4 //@representedBy/@containsFeatures.0/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.1/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.1/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.1/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.2/@containsVariant/@contains.2">
+      <describedBy instantiationValue="50" ofAttributeType="//@has/@contains.0" id="0d4402a9-66a6-4ac5-b9e6-79f56458f4f3"/>
+      <describedBy instantiationValue="19.99" ofAttributeType="//@has/@contains.1" id="a3797d88-7f16-4405-8bba-c91bd39e5f6b"/>
+      <describedBy instantiationValue="1" ofAttributeType="//@has/@contains.2" id="6c40f1e5-dc65-475d-8a06-931b3321c44b"/>
+      <describedBy instantiationValue="0" ofAttributeType="//@has/@contains.3" id="37bbddaf-3934-4697-9e4f-92c1da57bd63"/>
+    </contains>
+    <contains name="4" id="4" groups="//@representedBy/@containsFeatures.0 //@representedBy/@containsFeatures.0/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.2/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.3 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.4 //@representedBy/@containsFeatures.0/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.1/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.1/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.1/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.2/@containsVariant/@contains.1">
+      <describedBy instantiationValue="25" ofAttributeType="//@has/@contains.0" id="fefdbb89-25b2-42c8-a947-412c4f00f091"/>
+      <describedBy instantiationValue="9.99" ofAttributeType="//@has/@contains.1" id="c7cbc014-a678-4c75-98fc-b37b357fcc87"/>
+      <describedBy instantiationValue="1" ofAttributeType="//@has/@contains.2" id="c8d0967b-34e0-43f0-b699-f2b07fd5ab73"/>
+      <describedBy instantiationValue="0" ofAttributeType="//@has/@contains.3" id="3489e00c-d618-4b22-898a-48ac8f684e96"/>
+    </contains>
+  </enables>
+  <has>
+    <contains name="Storage capacity" toBeEvaluated="true" description="Storage capacity is provided in GByte." customAttributeTypePriority="3"/>
+    <contains name="Monthly cost" scaleOrder="LowerIsBetter" toBeEvaluated="true" description="Cost in dollar per user per month." customAttributeTypePriority="3"/>
+    <contains name="Number of users"/>
+    <contains name="Set up cost" scaleOrder="LowerIsBetter"/>
+  </has>
+</servicefeaturemodel:Service>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicefeaturemodel:Service xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:servicefeaturemodel="http://servicefeaturemodel/1.0" id="b22f60a7-650f-4163-ace8-8fc46048a3f2">
+  <representedBy id="f630911e-6d65-4ace-8447-04a881ed8727">
+    <containsFeatures xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="CloudStorageService" id="19bb031a-59d0-4c84-b094-ec91706303d2">
+      <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Safety" id="2c3a087f-7828-4643-8e8d-ec96cd521157">
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Versioning" id="93d71fb5-3e46-4199-8b1f-2b0d0fabd0f1" featureType="AbstractFeature"/>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Recovery" id="1944fc45-6713-4154-9018-47f3b9bd4fe8" featureType="AbstractFeature"/>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Data encryption" id="1b6abb6a-8e80-4c07-a958-1a9737e3a9c2" featureType="AbstractFeature"/>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Provider certifications" id="479d8563-2adb-4cdc-aec4-d542d8b2f1ee" featureType="AbstractFeature"/>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="User management" id="58fb8c82-6f71-4c8c-b404-1a9d7fd2af51" featureType="AbstractFeature" required="true"/>
+      </decomposesInto>
+      <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Usability" id="1a865b17-b3cf-4f87-9caf-3f08b68962d7">
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Service integration" id="29ddf6cc-c410-4a5f-8de8-d92f169cbb13" featureType="AbstractFeature"/>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Clients for mobile devices" id="c69757f9-d2cc-4f9b-89f7-12bf006422ed" featureType="AbstractFeature"/>
+        <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="E-Mail attachment delivery" id="c8fd49f0-208f-43c0-80c7-83d3f5197641" featureType="AbstractFeature"/>
+      </decomposesInto>
+      <decomposesInto xsi:type="servicefeaturemodel:MandatoryServiceFeature" name="Plans" id="ed03fe89-e3cd-46d4-99dd-12efec60a281"/>
+    </containsFeatures>
+  </representedBy>
+  <enables>
+    <contains name="1" id="1" groups="//@representedBy/@containsFeatures.0 //@representedBy/@containsFeatures.0/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.3 //@representedBy/@containsFeatures.0/@decomposesInto.0/@decomposesInto.4 //@representedBy/@containsFeatures.0/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.0 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.1 //@representedBy/@containsFeatures.0/@decomposesInto.1/@decomposesInto.2 //@representedBy/@containsFeatures.0/@decomposesInto.2">
+      <describedBy instantiationValue="0" ofAttributeType="//@has/@contains.0" id="fae3ce00-f583-4bab-ac04-386950049d69"/>
+      <describedBy instantiationValue="0.01" ofAttributeType="//@has/@contains.1" id="f67240fa-cde9-4dff-a820-3f53e756e025"/>
+      <describedBy instantiationValue="0" ofAttributeType="//@has/@contains.2" id="3a9ff26b-7d08-4aca-acd1-6a1151f19898"/>
+      <describedBy instantiationValue="0" ofAttributeType="//@has/@contains.3" id="85484025-401c-45e8-a4f9-6c84135c6b5d"/>
+    </contains>
+  </enables>
+  <has>
+    <contains name="Storage capacity" toBeEvaluated="true" description="Storage capacity is provided in GByte." customAttributeTypePriority="3" requirement="> 60"/>
+    <contains name="Set up cost" aggregationRule="Product" toBeEvaluated="true" description="Cost to set service up" customAttributeTypePriority="3" requirement=""/>
+    <contains name="Monthly cost" scaleOrder="LowerIsBetter" toBeEvaluated="true" description="Cost in dollar per user per month." customAttributeTypePriority="3" requirement="&lt; 20"/>
+    <contains name="Number of users" requirement=""/>
+  </has>
+</servicefeaturemodel:Service>

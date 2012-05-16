@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/external/cockpit/!svn/ver/456/CloudServiceSelection/ServiceModels/CloudStorageServiceSelection
+END
+CloudStorageService_MetaModel.sfm
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/external/cockpit/!svn/ver/531/CloudServiceSelection/ServiceModels/CloudStorageServiceSelection/CloudStorageService_MetaModel.sfm
+END
+Dropbox_ServiceModel.sfm
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/external/cockpit/!svn/ver/538/CloudServiceSelection/ServiceModels/CloudStorageServiceSelection/Dropbox_ServiceModel.sfm
+END
+Configs.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/external/cockpit/!svn/ver/539/CloudServiceSelection/ServiceModels/CloudStorageServiceSelection/Configs.txt
+END
+Box_ServiceModel.sfm
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/external/cockpit/!svn/ver/537/CloudServiceSelection/ServiceModels/CloudStorageServiceSelection/Box_ServiceModel.sfm
+END
+CloudStorageService_RequirementsModel.sfm
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/external/cockpit/!svn/ver/517/CloudServiceSelection/ServiceModels/CloudStorageServiceSelection/CloudStorageService_RequirementsModel.sfm
+END
+Wuala_ServiceModel.sfm
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/external/cockpit/!svn/ver/536/CloudServiceSelection/ServiceModels/CloudStorageServiceSelection/Wuala_ServiceModel.sfm
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/external/cockpit/!svn/ver/457/CloudServiceSelection/ServiceModels/CloudStorageServiceSelection/.project
+END
+CloudStorageService_AWS_S3.sfm
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/external/cockpit/!svn/ver/457/CloudServiceSelection/ServiceModels/CloudStorageServiceSelection/CloudStorageService_AWS_S3.sfm
+END

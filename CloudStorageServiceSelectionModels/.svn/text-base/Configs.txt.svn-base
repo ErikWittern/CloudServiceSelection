@@ -1,0 +1,23 @@
+ServiceModelName: Box_ServiceModel.sfm
+ReqModelName: CloudStorageService_RequirementsModel.sfm
+Requirement Storage capacity: > 60
+Requirement Monthly cost: < 20
+Required: User management
+Configuration 2
+ ATTS: Storage capacity: 1000; Monthly cost: 15; Number of users: 3; Set up cost: 0;  FEATURES: Box.net, Safety, Versioning, Version history, Data encryption, Provider certifications, SAS 70 Type II Certified, User management, User management console, Recovery, Usability, Service integration, Google Apps Integration, Clients for mobile devices, iOS, Blackberry, Android, E-Mail attachment delivery, Plans, Business, 
+Overall, 1 matching confs found.
+
+ServiceModelName: Wuala_ServiceModel.sfm
+ReqModelName: CloudStorageService_RequirementsModel.sfm
+Requirement Storage capacity: > 60
+Requirement Monthly cost: < 20
+Required: User management
+Configuration 1
+ ATTS: Storage capacity: 100; Monthly cost: 4.65; Number of users: 5; Set up cost: 0;  FEATURES: CloudStorageService, Safety, Versioning, Access 10 previous versions, Recovery mechanism, Unlimited versioning, Data encryption, SSL, 256-bit AES, 2048-bit RSA, SHA 256, Provider certifications, User management, Advanced user management, Usability, Service integration, Clients for mobile devices, iOS, Android, E-Mail attachment delivery, Plans, Business, 
+Configuration 2
+ ATTS: Storage capacity: 100; Monthly cost: 7.3; Number of users: 10; Set up cost: 0;  FEATURES: CloudStorageService, Safety, Versioning, Access 10 previous versions, Recovery mechanism, Unlimited versioning, Data encryption, SSL, 256-bit AES, 2048-bit RSA, SHA 256, Provider certifications, User management, Advanced user management, Usability, Service integration, Clients for mobile devices, iOS, Android, E-Mail attachment delivery, Plans, Additional business users, Business, 
+Configuration 3
+ ATTS: Storage capacity: 200; Monthly cost: 6.63; Number of users: 5; Set up cost: 0;  FEATURES: CloudStorageService, Safety, Versioning, Access 10 previous versions, Recovery mechanism, Unlimited versioning, Data encryption, SSL, 256-bit AES, 2048-bit RSA, SHA 256, Provider certifications, User management, Advanced user management, Usability, Service integration, Clients for mobile devices, iOS, Android, E-Mail attachment delivery, Plans, Additional business storage, Business, 
+Configuration 4
+ ATTS: Storage capacity: 200; Monthly cost: 9.28; Number of users: 10; Set up cost: 0;  FEATURES: CloudStorageService, Safety, Versioning, Access 10 previous versions, Recovery mechanism, Unlimited versioning, Data encryption, SSL, 256-bit AES, 2048-bit RSA, SHA 256, Provider certifications, User management, Advanced user management, Usability, Service integration, Clients for mobile devices, iOS, Android, E-Mail attachment delivery, Plans, Additional business storage, Additional business users, Business, 
+Overall, 4 matching confs found.
