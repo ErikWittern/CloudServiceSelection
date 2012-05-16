@@ -1,0 +1,132 @@
+/*
+ * Project: Cockpit Service Feature Model designer
+ * Author:  Erik Wittern
+ * Copyright (c): KIT, 2011
+ */
+package edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation;
+
+import org.eclipse.osgi.util.NLS;
+
+public class Messages extends NLS {
+	private static final String BUNDLE_NAME = "edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.messages"; //$NON-NLS-1$
+
+
+	public static String EvaluationResultsWizard_WindowTitle;
+	public static String EvaluationResultsWizard_EvaluationSelectionPage_Title;
+	public static String EvaluationResultsWizard_EvaluationSelectionPage_Message;
+	
+	public static String EvaluationResultsWizard_VoteSelectionPage_Title;
+	public static String EvaluationResultsWizard_VoteSelectionPage_Message;
+	
+	public static String EvaluationResultsWizard_No_Votes_Exist_Error_Title;
+	public static String EvaluationResultsWizard_No_Votes_Exist_Error_Message;
+	
+	public static String EvaluationResultsWizard_Vote_Does_Not_Exist_Error_Title;
+	public static String EvaluationResultsWizard_Vote_Does_Not_Exist_Error_Message;
+	
+	public static String EvaluationResultsWizard_Configuration_Does_Not_Exist_Error_Title;
+	public static String EvaluationResultsWizard_Configuration_Does_Not_Exist_Error_Message;
+	
+	// New Evaluation Wizard - General:
+	public static String NewEvaluationWizard_WindowTitle;
+	public static String NewEvaluationWizard_POST_Evaluation_Error_Title;
+	public static String NewEvaluationWizard_POST_Evaluation_Error_Message;
+	
+	// New Evaluation Wizard - Attribute Configuration Page:
+	public static String NewEvaluationWizard_AttributeConfigurationPage_Title;
+	public static String NewEvaluationWizard_AttributeConfigurationPage_Message;
+	
+	public static String NewEvaluationWizard_AttributeConfigurationPage_Error_InsufficientNumComparisons;
+	public static String NewEvaluationWizard_AttributeConfigurationPage_LabelNumberComparisons;
+	
+	public static String NewEvaluationWizard_AttributeConfigurationPage_TableColumnTitles_AggregationRule;
+	public static String NewEvaluationWizard_AttributeConfigurationPage_TableColumnTitles_Name;
+	public static String NewEvaluationWizard_AttributeConfigurationPage_TableColumnTitles_ScaleOrder;
+	public static String NewEvaluationWizard_AttributeConfigurationPage_TableColumnTitles_ToBeEvaluated;
+	
+	// New Evaluation Wizard - Custom Attribute Priortization Page
+	public static String NewEvaluationWizard_CustomAttributePriortizationPage_Title;
+	public static String NewEvaluationWizard_CustomAttributePriortizationPage_Message;
+
+	public static String NewEvaluationWizard_CustomAttributePriortizationPage_Compare_Label_part0;
+	public static String NewEvaluationWizard_CustomAttributePriortizationPage_Compare_Label_part1;
+	public static String NewEvaluationWizard_CustomAttributePriortizationPage_Compare_Label_part2;
+	public static String NewEvaluationWizard_CustomAttributePriortizationPage_Compare_Label_part3;
+	
+	public static String NewEvaluationWizard_CustomAttributePriortizationPage_Compare_Label_highly_preferred;
+	public static String NewEvaluationWizard_CustomAttributePriortizationPage_Compare_Label_preferred;
+	public static String NewEvaluationWizard_CustomAttributePriortizationPage_Compare_Label_slightly_preferred;
+	public static String NewEvaluationWizard_CustomAttributePriortizationPage_Compare_Label_indifferent;
+	public static String NewEvaluationWizard_CustomAttributePriortizationPage_Compare_Label_slightly_disliked;
+	public static String NewEvaluationWizard_CustomAttributePriortizationPage_Compare_Label_disliked;
+	public static String NewEvaluationWizard_CustomAttributePriortizationPage_Compare_Label_highly_disliked;
+	
+	// New Evaluation Wizard - Evaluation Configuration Page
+	public static String NewEvaluationWizard_EvaluationConfigurationPage_Title;
+	public static String NewEvaluationWizard_EvaluationConfigurationPage_Message;
+	public static String NewEvaluationWizard_EvaluationConfigurationPage_Label_ServiceID;
+	public static String NewEvaluationWizard_EvaluationConfigurationPage_Error_ServiceID;
+	public static String NewEvaluationWizard_EvaluationConfigurationPage_Label_EvaluationName;
+	public static String NewEvaluationWizard_EvaluationConfigurationPage_Label_Description;
+	public static String NewEvaluationWizard_EvaluationConfigurationPage_Label_Version;
+	public static String NewEvaluationWizard_EvaluationConfigurationPage_Label_Stakeholder;
+	public static String NewEvaluationWizard_EvaluationConfigurationPage_Label_State;
+	public static String NewEvaluationWizard_EvaluationConfigurationPage_Label_EndDate;
+	public static String NewEvaluationWizard_EvaluationConfigurationPage_Error_Message_Incomplete;
+	
+
+	
+	// Evaluation Management Wizard - General:
+	public static String EvaluationManagementWizard_WindowTitle;
+	public static String EvaluationManagementWizard_POST_Evaluation_Error_Title;
+	public static String EvaluationManagementWizard_POST_Evaluation_Error_Message;
+	
+	// Evaluation Management Wizard - Evaluation Selection Page
+	public static String EvaluationManagementWizard_EvaluationSelectionPage_Title;
+	public static String EvaluationManagementWizard_EvaluationSelectionPage_Message;
+	public static String EvaluationManagementWizard_EvaluationSelectionPage_GET_Evaluation_Error_Title;
+	public static String EvaluationManagementWizard_EvaluationSelectionPage_GET_Evaluation_Error_Message;
+	public static String EvaluationManagementWizard_EvaluationSelectionPage_DELETE_Evaluation_Error_Title;
+	public static String EvaluationManagementWizard_EvaluationSelectionPage_DELETE_Evaluation_Error_Message;
+	public static String EvaluationManagementWizard_EvaluationSelectionPage_DELETE_Evaluation_Success_Title;
+	public static String EvaluationManagementWizard_EvaluationSelectionPage_DELETE_Evaluation_Success_Message;
+	public static String EvaluationManagementWizard_EvaluationSelectionPage_TableColumnTitles_ServiceName;
+	public static String EvaluationManagementWizard_EvaluationSelectionPage_TableColumnTitles_ID;
+	public static String EvaluationManagementWizard_EvaluationSelectionPage_TableColumnTitles_Description;
+	public static String EvaluationManagementWizard_EvaluationSelectionPage_TableColumnTitles_State;
+	public static String EvaluationManagementWizard_EvaluationSelectionPage_TableColumnTitles_StakeholderGroup;
+	public static String EvaluationManagementWizard_EvaluationSelectionPage_TableColumnTitles_EndDate;
+	
+	// Evaluation Management Wizard - Evaluation Edit Page
+	public static String EvaluationManagementWizard_EvaluationEditPage_Title;
+	public static String EvaluationManagementWizard_EvaluationEditPage_Message;
+	public static String EvaluationManagementWizard_EvaluationEditPage_Label_EvaluationName;
+	public static String EvaluationManagementWizard_EvaluationEditPage_Label_ServiceID;
+	public static String EvaluationManagementWizard_EvaluationEditPage_Label_Description;
+	public static String EvaluationManagementWizard_EvaluationEditPage_Label_Version;
+	public static String EvaluationManagementWizard_EvaluationEditPage_Label_StakeholderGroup;
+	public static String EvaluationManagementWizard_EvaluationEditPage_Label_State;
+	public static String EvaluationManagementWizard_EvaluationEditPage_Label_EndDate;
+	public static String EvaluationManagementWizard_EvaluationEditPage_Label_no_name;
+	public static String EvaluationManagementWizard_EvaluationEditPage_Label_no_id;
+	public static String EvaluationManagementWizard_EvaluationEditPage_Label_no_description;
+	public static String EvaluationManagementWizard_EvaluationEditPage_Label_no_version;
+	public static String EvaluationManagementWizard_EvaluationEditPage_GET_Evaluation_Error_Title;
+	public static String EvaluationManagementWizard_EvaluationEditPage_GET_Evaluation_Error_Message;	
+	public static String EvaluationManagementWizard_EvaluationEditPage_Validate_Error_Message;
+	
+	// GSM Mapping Wizard - General:
+	
+	// GSM Mapping Wizard - Mapping Page:
+	public static String GSMMappingWizard_MappingPage_Title;
+	public static String GSMMappingWizard_MappingPage_Message;
+	
+	
+	static {
+		// initialize resource bundle
+		NLS.initializeMessages(BUNDLE_NAME, Messages.class);
+	}
+
+	private Messages() {
+	}
+}

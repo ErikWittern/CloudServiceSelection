@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/analyzer/domain
+END
+ValueDependency.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/analyzer/domain/ValueDependency.groovy
+END
+ConstraintModel.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/analyzer/domain/ConstraintModel.groovy
+END
+Dependency.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/analyzer/domain/Dependency.groovy
+END
+ServiceAttribute.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 181
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/analyzer/domain/ServiceAttribute.groovy
+END
+AttributeType.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/analyzer/domain/AttributeType.groovy
+END
+VariabilityDependency.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/analyzer/domain/VariabilityDependency.groovy
+END
+ServiceFeature.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/analyzer/domain/ServiceFeature.groovy
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/analyzer/domain/java
+END
+AttributeDomain.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/analyzer/domain/java/AttributeDomain.java
+END
+AggregationRule.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/analyzer/domain/java/AggregationRule.java
+END
+VariabilityDependencyType.java
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/analyzer/domain/java/VariabilityDependencyType.java
+END
+FactorType.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/analyzer/domain/java/FactorType.java
+END
+ValueDependencyType.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/analyzer/domain/java/ValueDependencyType.java
+END
+ScaleOrder.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/analyzer/domain/java/ScaleOrder.java
+END

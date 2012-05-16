@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation
+END
+NewEvaluationWizardAttributeConfigurationPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 225
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/NewEvaluationWizardAttributeConfigurationPage.java
+END
+ServicefeaturemodelModelWizard.java
+K 25
+svn:wc:ra_dav:version-url
+V 210
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/ServicefeaturemodelModelWizard.java
+END
+Messages.java
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/Messages.java
+END
+EvaluationManagementWizard.java
+K 25
+svn:wc:ra_dav:version-url
+V 206
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/EvaluationManagementWizard.java
+END
+ServiceFeatureModelEditorPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 211
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/ServiceFeatureModelEditorPlugin.java
+END
+NewEvaluationWizard.java
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/NewEvaluationWizard.java
+END
+ServicefeaturemodelActionBarContributor.java
+K 25
+svn:wc:ra_dav:version-url
+V 219
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/ServicefeaturemodelActionBarContributor.java
+END
+View.java
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/View.java
+END
+EvaluationResultsWizard.java
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/EvaluationResultsWizard.java
+END
+EvaluationManagementWizardActionDelegate.java
+K 25
+svn:wc:ra_dav:version-url
+V 220
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/EvaluationManagementWizardActionDelegate.java
+END
+NewEvaluationWizardEvaluationConfigurationPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 226
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/NewEvaluationWizardEvaluationConfigurationPage.java
+END
+NewEvaluationWizardCustomAttributePrioritizationPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 232
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/NewEvaluationWizardCustomAttributePrioritizationPage.java
+END
+NewEvaluationWizardActionDelegate.java
+K 25
+svn:wc:ra_dav:version-url
+V 213
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/NewEvaluationWizardActionDelegate.java
+END
+AttributeTypeData.java
+K 25
+svn:wc:ra_dav:version-url
+V 197
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/AttributeTypeData.java
+END
+EvaluationResultsWizardActionDelegate.java
+K 25
+svn:wc:ra_dav:version-url
+V 217
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/EvaluationResultsWizardActionDelegate.java
+END
+EvaluationManagementWizardEvaluationEditPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/EvaluationManagementWizardEvaluationEditPage.java
+END
+messages.properties
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/messages.properties
+END
+EvaluationResultsWizardEvaluationSelectionPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 226
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/EvaluationResultsWizardEvaluationSelectionPage.java
+END
+ServicefeaturemodelEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/ServicefeaturemodelEditor.java
+END
+EvaluationManagementWizardEvaluationSelectionPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 229
+/external/cockpit/!svn/ver/501/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/presentation/EvaluationManagementWizardEvaluationSelectionPage.java
+END

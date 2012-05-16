@@ -1,0 +1,380 @@
+/**
+ * <copyright>
+ * </copyright>
+ *
+ * $Id$
+ */
+package edu.kit.cockpit.sfmdesigner.servicefeaturemodel;
+
+import java.util.List;
+import java.util.Map;
+
+import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Service Feature</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * <ul>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getName <em>Name</em>}</li>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getDescription <em>Description</em>}</li>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getDescribedBy <em>Described By</em>}</li>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getContainsVariant <em>Contains Variant</em>}</li>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getContainsRequires <em>Contains Requires</em>}</li>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getContainsExcludes <em>Contains Excludes</em>}</li>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getDecomposesInto <em>Decomposes Into</em>}</li>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getMinAmount <em>Min Amount</em>}</li>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getMaxAmount <em>Max Amount</em>}</li>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#isMapsToGSMElement <em>Maps To GSM Element</em>}</li>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getAssociatedGSMElement <em>Associated GSM Element</em>}</li>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getId <em>Id</em>}</li>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getFeatureType <em>Feature Type</em>}</li>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#isRequired <em>Required</em>}</li>
+ * </ul>
+ * </p>
+ *
+ * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getServiceFeature()
+ * @model abstract="true"
+ * @generated
+ */
+public interface ServiceFeature extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Name</em>' attribute.
+	 * @see #setName(String)
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getServiceFeature_Name()
+	 * @model
+	 * @generated
+	 */
+	String getName();
+
+	/**
+	 * Sets the value of the '{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getName <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Name</em>' attribute.
+	 * @see #getName()
+	 * @generated
+	 */
+	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Description</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Description</em>' attribute.
+	 * @see #setDescription(String)
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getServiceFeature_Description()
+	 * @model
+	 * @generated
+	 */
+	String getDescription();
+
+	/**
+	 * Sets the value of the '{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getDescription <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Description</em>' attribute.
+	 * @see #getDescription()
+	 * @generated
+	 */
+	void setDescription(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Described By</b></em>' containment reference list.
+	 * The list contents are of type {@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.Attribute}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Described By</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Described By</em>' containment reference list.
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getServiceFeature_DescribedBy()
+	 * @model containment="true"
+	 * @generated
+	 */
+	List<Attribute> getDescribedBy();
+
+	/**
+	 * Returns the value of the '<em><b>Contains Variant</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Contains Variant</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contains Variant</em>' containment reference.
+	 * @see #setContainsVariant(Variant)
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getServiceFeature_ContainsVariant()
+	 * @model containment="true"
+	 * @generated
+	 */
+	Variant getContainsVariant();
+
+	/**
+	 * Sets the value of the '{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getContainsVariant <em>Contains Variant</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Contains Variant</em>' containment reference.
+	 * @see #getContainsVariant()
+	 * @generated
+	 */
+	void setContainsVariant(Variant value);
+
+	/**
+	 * Returns the value of the '<em><b>Contains Requires</b></em>' containment reference list.
+	 * The list contents are of type {@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.Requires}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Contains Requires</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contains Requires</em>' containment reference list.
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getServiceFeature_ContainsRequires()
+	 * @model containment="true"
+	 * @generated
+	 */
+	List<Requires> getContainsRequires();
+
+	/**
+	 * Returns the value of the '<em><b>Contains Excludes</b></em>' containment reference list.
+	 * The list contents are of type {@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.Excludes}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Contains Excludes</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contains Excludes</em>' containment reference list.
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getServiceFeature_ContainsExcludes()
+	 * @model containment="true"
+	 * @generated
+	 */
+	List<Excludes> getContainsExcludes();
+
+	/**
+	 * Returns the value of the '<em><b>Decomposes Into</b></em>' containment reference list.
+	 * The list contents are of type {@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Decomposes Into</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Decomposes Into</em>' containment reference list.
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getServiceFeature_DecomposesInto()
+	 * @model containment="true"
+	 * @generated
+	 */
+	List<ServiceFeature> getDecomposesInto();
+
+	/**
+	 * Returns the value of the '<em><b>Min Amount</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Min Amount</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Min Amount</em>' attribute.
+	 * @see #setMinAmount(int)
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getServiceFeature_MinAmount()
+	 * @model
+	 * @generated
+	 */
+	int getMinAmount();
+
+	/**
+	 * Sets the value of the '{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getMinAmount <em>Min Amount</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Min Amount</em>' attribute.
+	 * @see #getMinAmount()
+	 * @generated
+	 */
+	void setMinAmount(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Max Amount</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Max Amount</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Max Amount</em>' attribute.
+	 * @see #setMaxAmount(int)
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getServiceFeature_MaxAmount()
+	 * @model
+	 * @generated
+	 */
+	int getMaxAmount();
+
+	/**
+	 * Sets the value of the '{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getMaxAmount <em>Max Amount</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Max Amount</em>' attribute.
+	 * @see #getMaxAmount()
+	 * @generated
+	 */
+	void setMaxAmount(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Maps To GSM Element</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Maps To GSM Element</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Maps To GSM Element</em>' attribute.
+	 * @see #setMapsToGSMElement(boolean)
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getServiceFeature_MapsToGSMElement()
+	 * @model
+	 * @generated
+	 */
+	boolean isMapsToGSMElement();
+
+	/**
+	 * Sets the value of the '{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#isMapsToGSMElement <em>Maps To GSM Element</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Maps To GSM Element</em>' attribute.
+	 * @see #isMapsToGSMElement()
+	 * @generated
+	 */
+	void setMapsToGSMElement(boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Associated GSM Element</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Associated GSM Element</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Associated GSM Element</em>' attribute.
+	 * @see #setAssociatedGSMElement(String)
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getServiceFeature_AssociatedGSMElement()
+	 * @model
+	 * @generated
+	 */
+	String getAssociatedGSMElement();
+
+	/**
+	 * Sets the value of the '{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getAssociatedGSMElement <em>Associated GSM Element</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Associated GSM Element</em>' attribute.
+	 * @see #getAssociatedGSMElement()
+	 * @generated
+	 */
+	void setAssociatedGSMElement(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Id</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Id</em>' attribute.
+	 * @see #setId(String)
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getServiceFeature_Id()
+	 * @model
+	 * @generated
+	 */
+	String getId();
+
+	/**
+	 * Sets the value of the '{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getId <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Id</em>' attribute.
+	 * @see #getId()
+	 * @generated
+	 */
+	void setId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Feature Type</b></em>' attribute.
+	 * The literals are from the enumeration {@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.FeatureTypes}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Feature Type</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Feature Type</em>' attribute.
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.FeatureTypes
+	 * @see #setFeatureType(FeatureTypes)
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getServiceFeature_FeatureType()
+	 * @model
+	 * @generated
+	 */
+	FeatureTypes getFeatureType();
+
+	/**
+	 * Sets the value of the '{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#getFeatureType <em>Feature Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Feature Type</em>' attribute.
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.FeatureTypes
+	 * @see #getFeatureType()
+	 * @generated
+	 */
+	void setFeatureType(FeatureTypes value);
+
+	/**
+	 * Returns the value of the '<em><b>Required</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Required</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Required</em>' attribute.
+	 * @see #setRequired(boolean)
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getServiceFeature_Required()
+	 * @model
+	 * @generated
+	 */
+	boolean isRequired();
+
+	/**
+	 * Sets the value of the '{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServiceFeature#isRequired <em>Required</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Required</em>' attribute.
+	 * @see #isRequired()
+	 * @generated
+	 */
+	void setRequired(boolean value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	boolean validate(DiagnosticChain diagnostic, Map<Object, Object> context);
+
+} // ServiceFeature

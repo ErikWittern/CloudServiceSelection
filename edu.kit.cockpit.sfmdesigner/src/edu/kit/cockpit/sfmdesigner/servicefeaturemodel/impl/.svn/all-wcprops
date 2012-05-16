@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/external/cockpit/!svn/ver/499/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl
+END
+PossibleConfigurationsImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/external/cockpit/!svn/ver/499/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/PossibleConfigurationsImpl.java
+END
+RequiresImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/external/cockpit/!svn/ver/499/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/RequiresImpl.java
+END
+VariantImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/external/cockpit/!svn/ver/499/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/VariantImpl.java
+END
+ORImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/external/cockpit/!svn/ver/499/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/ORImpl.java
+END
+ServicefeaturemodelFactoryImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/external/cockpit/!svn/ver/513/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/ServicefeaturemodelFactoryImpl.java
+END
+OptionalServiceFeatureImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 191
+/external/cockpit/!svn/ver/499/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/OptionalServiceFeatureImpl.java
+END
+ServiceFeatureImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/external/cockpit/!svn/ver/519/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/ServiceFeatureImpl.java
+END
+ServicefeaturemodelPackageImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/external/cockpit/!svn/ver/519/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/ServicefeaturemodelPackageImpl.java
+END
+AttributeTypesImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/external/cockpit/!svn/ver/499/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/AttributeTypesImpl.java
+END
+FeatureToAttributeModifyRelationshipImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 205
+/external/cockpit/!svn/ver/499/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/FeatureToAttributeModifyRelationshipImpl.java
+END
+AttributeImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/external/cockpit/!svn/ver/499/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/AttributeImpl.java
+END
+PreferenceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/external/cockpit/!svn/ver/499/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/PreferenceImpl.java
+END
+XORImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/external/cockpit/!svn/ver/499/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/XORImpl.java
+END
+MandatoryServiceFeatureImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/external/cockpit/!svn/ver/499/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/MandatoryServiceFeatureImpl.java
+END
+ExcludesImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/external/cockpit/!svn/ver/499/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/ExcludesImpl.java
+END
+AttributeToAttributeModifyRelationshipImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 207
+/external/cockpit/!svn/ver/499/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/AttributeToAttributeModifyRelationshipImpl.java
+END
+AttributeTypeImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/external/cockpit/!svn/ver/513/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/AttributeTypeImpl.java
+END
+ConfigurationImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/external/cockpit/!svn/ver/513/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/ConfigurationImpl.java
+END
+ServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/external/cockpit/!svn/ver/499/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/ServiceImpl.java
+END
+ServiceFeatureDiagramImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/external/cockpit/!svn/ver/513/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/ServiceFeatureDiagramImpl.java
+END
+ModifyRelationshipImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/external/cockpit/!svn/ver/499/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/impl/ModifyRelationshipImpl.java
+END

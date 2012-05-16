@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16
+END
+CreateServiceFeature_describedBy_Attribute.gif
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateServiceFeature_describedBy_Attribute.gif
+END
+CreateVariant_contains_OptionalServiceFeature.gif
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateVariant_contains_OptionalServiceFeature.gif
+END
+CreateService_representedBy_ServiceFeatureDiagram.gif
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateService_representedBy_ServiceFeatureDiagram.gif
+END
+CreatePossibleConfigurations_contains_Configuration.gif
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreatePossibleConfigurations_contains_Configuration.gif
+END
+CreateAttribute_containsModifyRelationship_FeatureToAttributeModifyRelationship.gif
+K 25
+svn:wc:ra_dav:version-url
+V 210
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateAttribute_containsModifyRelationship_FeatureToAttributeModifyRelationship.gif
+END
+CreateAttribute_evaluatedBy_RelativeAttributePreference.gif
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateAttribute_evaluatedBy_RelativeAttributePreference.gif
+END
+CreateAttribute_evaluatedBy_Preference.gif
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateAttribute_evaluatedBy_Preference.gif
+END
+CreateServiceFeatureDiagram_containsFeatures_OptionalServiceFeature.gif
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateServiceFeatureDiagram_containsFeatures_OptionalServiceFeature.gif
+END
+CreateServiceFeature_decomposesInto_OptionalServiceFeature.gif
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateServiceFeature_decomposesInto_OptionalServiceFeature.gif
+END
+CreateAttributeTypes_contains_AttributeType.gif
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateAttributeTypes_contains_AttributeType.gif
+END
+CreateConfiguration_evaluatedBy_Preference.gif
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateConfiguration_evaluatedBy_Preference.gif
+END
+CreateServiceFeature_featureToAttributeModifyRelationship_FeatureToAttributeModifyRelationship.gif
+K 25
+svn:wc:ra_dav:version-url
+V 225
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateServiceFeature_featureToAttributeModifyRelationship_FeatureToAttributeModifyRelationship.gif
+END
+CreateServiceFeature_containsVariant_OR.gif
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateServiceFeature_containsVariant_OR.gif
+END
+CreateServiceFeature_containsExcludes_Excludes.gif
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateServiceFeature_containsExcludes_Excludes.gif
+END
+CreateServiceFeature_containsRequires_Requires.gif
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateServiceFeature_containsRequires_Requires.gif
+END
+CreateServiceFeature_decomposesInto_MandatoryServiceFeature.gif
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateServiceFeature_decomposesInto_MandatoryServiceFeature.gif
+END
+CreateServiceFeature_containsVariant_XOR.gif
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateServiceFeature_containsVariant_XOR.gif
+END
+CreateServiceFeatureDiagram_containsFeatures_MandatoryServiceFeature.gif
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateServiceFeatureDiagram_containsFeatures_MandatoryServiceFeature.gif
+END
+CreateAttribute_attributeToAttributeModifyRelationship_AttributeToAttributeModifyRelationship.gif
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateAttribute_attributeToAttributeModifyRelationship_AttributeToAttributeModifyRelationship.gif
+END
+CreateService_enables_PossibleConfigurations.gif
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateService_enables_PossibleConfigurations.gif
+END
+CreateConfiguration_evaluatedBy_RelativeConfigurationPreference.gif
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateConfiguration_evaluatedBy_RelativeConfigurationPreference.gif
+END
+CreateAttribute_containsModifyRelationship_AttributeToAttributeModifyRelationship.gif
+K 25
+svn:wc:ra_dav:version-url
+V 212
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateAttribute_containsModifyRelationship_AttributeToAttributeModifyRelationship.gif
+END
+CreateConfiguration_describedBy_Attribute.gif
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateConfiguration_describedBy_Attribute.gif
+END
+CreateService_has_AttributeTypes.gif
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateService_has_AttributeTypes.gif
+END
+CreateConfiguration_evaluatedBy_RelativeAttributePreference.gif
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateConfiguration_evaluatedBy_RelativeAttributePreference.gif
+END
+CreateAttribute_evaluatedBy_RelativeConfigurationPreference.gif
+K 25
+svn:wc:ra_dav:version-url
+V 190
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/icons/full/ctool16/CreateAttribute_evaluatedBy_RelativeConfigurationPreference.gif
+END

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/edu.kit.cockpit.sfmdesigner/src"
+    editDirectory="/edu.kit.cockpit.sfmdesigner.edit/src" editorDirectory="/edu.kit.cockpit.sfmdesigner.editor/src"
+    modelPluginID="edu.kit.cockpit.sfmdesigner" modelName="ServiceFeatureModel" editPluginClass="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.provider.ServiceFeatureModelEditPlugin"
+    editorPluginClass="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.ServiceFeatureModelEditorPlugin"
+    suppressEMFTypes="true" testSuiteClass="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.tests.ServiceFeatureModelAllTests"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false"
+    providerRootExtendsClass="" editPluginID="edu.kit.cockpit.sfmdesigner.edit" interfaceNamePattern="">
+  <foreignModel>ServiceFeatureModel.ecore</foreignModel>
+  <genPackages prefix="Servicefeaturemodel" basePackage="edu.kit.cockpit.sfmdesigner"
+      disposableProviderFactory="true" fileExtensions="sfm" ecorePackage="ServiceFeatureModel.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ServiceFeatureModel.ecore#//AttributeDomain">
+      <genEnumLiterals ecoreEnumLiteral="ServiceFeatureModel.ecore#//AttributeDomain/Continuous"/>
+      <genEnumLiterals ecoreEnumLiteral="ServiceFeatureModel.ecore#//AttributeDomain/Boolean"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ServiceFeatureModel.ecore#//AggregationRules">
+      <genEnumLiterals ecoreEnumLiteral="ServiceFeatureModel.ecore#//AggregationRules/Sum"/>
+      <genEnumLiterals ecoreEnumLiteral="ServiceFeatureModel.ecore#//AggregationRules/Product"/>
+      <genEnumLiterals ecoreEnumLiteral="ServiceFeatureModel.ecore#//AggregationRules/AtLeastOnce"/>
+      <genEnumLiterals ecoreEnumLiteral="ServiceFeatureModel.ecore#//AggregationRules/Minimum"/>
+      <genEnumLiterals ecoreEnumLiteral="ServiceFeatureModel.ecore#//AggregationRules/Maximum"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="ServiceFeatureModel.ecore#//ScaleOrders">
+      <genEnumLiterals ecoreEnumLiteral="ServiceFeatureModel.ecore#//ScaleOrders/HigherIsBetter"/>
+      <genEnumLiterals ecoreEnumLiteral="ServiceFeatureModel.ecore#//ScaleOrders/LowerIsBetter"/>
+      <genEnumLiterals ecoreEnumLiteral="ServiceFeatureModel.ecore#//ScaleOrders/ExistenceIsBetter"/>
+    </genEnums>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//Service">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//Service/representedBy"/>
+      <genFeatures createChild="false" propertyMultiLine="true" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//Service/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//Service/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//Service/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//Service/enables"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//Service/has"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ServiceFeatureModel.ecore#//ServiceFeature">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//ServiceFeature/name"/>
+      <genFeatures createChild="false" propertyMultiLine="true" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//ServiceFeature/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//ServiceFeature/describedBy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//ServiceFeature/containsVariant"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//ServiceFeature/containsRequires"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//ServiceFeature/containsExcludes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//ServiceFeature/decomposesInto"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//ServiceFeature/minAmount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//ServiceFeature/maxAmount"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//ServiceFeature/mapsToGSMElement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//ServiceFeature/associatedGSMElement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//ServiceFeature/id"/>
+      <genOperations ecoreOperation="ServiceFeatureModel.ecore#//ServiceFeature/validate">
+        <genParameters ecoreParameter="ServiceFeatureModel.ecore#//ServiceFeature/validate/diagnostic"/>
+        <genParameters ecoreParameter="ServiceFeatureModel.ecore#//ServiceFeature/validate/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//OptionalServiceFeature"/>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//Attribute/instantiationValue"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//Attribute/evaluatedBy"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//Attribute/ofAttributeType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//Attribute/containsModifyRelationship"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//Attribute/id"/>
+    </genClasses>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//Requires">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//Requires/requiresServiceFeature"/>
+    </genClasses>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//Excludes">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//Excludes/excludesServiceFeature"/>
+    </genClasses>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//OR">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//OR/minFeaturesToChoose"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//OR/maxFeaturesToChoose"/>
+    </genClasses>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//XOR"/>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//ServiceFeatureDiagram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//ServiceFeatureDiagram/containsFeatures"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//ServiceFeatureDiagram/name"/>
+      <genFeatures createChild="false" propertyMultiLine="true" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//ServiceFeatureDiagram/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//ServiceFeatureDiagram/id"/>
+      <genOperations ecoreOperation="ServiceFeatureModel.ecore#//ServiceFeatureDiagram/validate">
+        <genParameters ecoreParameter="ServiceFeatureModel.ecore#//ServiceFeatureDiagram/validate/diagnostic"/>
+        <genParameters ecoreParameter="ServiceFeatureModel.ecore#//ServiceFeatureDiagram/validate/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//Configuration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//Configuration/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//Configuration/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//Configuration/groups"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//Configuration/evaluatedBy"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//Configuration/describedBy"/>
+      <genFeatures createChild="false" propertyMultiLine="true" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//Configuration/description"/>
+      <genOperations ecoreOperation="ServiceFeatureModel.ecore#//Configuration/validate">
+        <genParameters ecoreParameter="ServiceFeatureModel.ecore#//Configuration/validate/diagnostic"/>
+        <genParameters ecoreParameter="ServiceFeatureModel.ecore#//Configuration/validate/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//Preference">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//Preference/creationDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//Preference/value"/>
+      <genFeatures createChild="false" propertyMultiLine="true" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//Preference/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//Preference/stakeholderGroup"/>
+    </genClasses>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//RelativeAttributePreference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//RelativeAttributePreference/relatedTo"/>
+    </genClasses>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//RelativeConfigurationPreference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//RelativeConfigurationPreference/relatedTo"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ServiceFeatureModel.ecore#//Variant">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//Variant/contains"/>
+    </genClasses>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//MandatoryServiceFeature"/>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//PossibleConfigurations">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//PossibleConfigurations/contains"/>
+    </genClasses>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//AttributeTypes">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//AttributeTypes/contains"/>
+    </genClasses>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//AttributeType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//AttributeType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//AttributeType/domain"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//AttributeType/aggregationRule"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//AttributeType/scaleOrder"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//AttributeType/toBeEvaluated"/>
+      <genFeatures createChild="false" propertyMultiLine="true" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//AttributeType/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//AttributeType/customAttributeTypePriority"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="ServiceFeatureModel.ecore#//ModifyRelationship">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//ModifyRelationship/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//ModifyRelationship/orderNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//ModifyRelationship/function"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//ModifyRelationship/targetParameterName"/>
+    </genClasses>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//AttributeToAttributeModifyRelationship">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ServiceFeatureModel.ecore#//AttributeToAttributeModifyRelationship/triggerParameterName"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//AttributeToAttributeModifyRelationship/triggeredByAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="ServiceFeatureModel.ecore#//FeatureToAttributeModifyRelationship">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ServiceFeatureModel.ecore#//FeatureToAttributeModifyRelationship/triggeredByServiceFeature"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

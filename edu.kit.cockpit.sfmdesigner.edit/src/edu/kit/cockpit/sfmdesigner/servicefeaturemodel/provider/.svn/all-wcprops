@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider
+END
+VariantItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/VariantItemProvider.java
+END
+ORItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 188
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/ORItemProvider.java
+END
+ServicefeaturemodelItemProviderAdapterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 219
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/ServicefeaturemodelItemProviderAdapterFactory.java
+END
+ServiceFeatureItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/external/cockpit/!svn/ver/520/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/ServiceFeatureItemProvider.java
+END
+OptionalServiceFeatureItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 208
+/external/cockpit/!svn/ver/565/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/OptionalServiceFeatureItemProvider.java
+END
+ServiceFeatureModelEditPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 203
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/ServiceFeatureModelEditPlugin.java
+END
+FeatureToAttributeModifyRelationshipItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 222
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/FeatureToAttributeModifyRelationshipItemProvider.java
+END
+AttributeTypesItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 200
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/AttributeTypesItemProvider.java
+END
+AttributeItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 195
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/AttributeItemProvider.java
+END
+XORItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/XORItemProvider.java
+END
+PreferenceItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 196
+/external/cockpit/!svn/ver/565/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/PreferenceItemProvider.java
+END
+MandatoryServiceFeatureItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 209
+/external/cockpit/!svn/ver/565/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/MandatoryServiceFeatureItemProvider.java
+END
+ExcludesItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/ExcludesItemProvider.java
+END
+AttributeToAttributeModifyRelationshipItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 224
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/AttributeToAttributeModifyRelationshipItemProvider.java
+END
+AttributeTypeItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/external/cockpit/!svn/ver/565/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/AttributeTypeItemProvider.java
+END
+ConfigurationItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 199
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/ConfigurationItemProvider.java
+END
+ServiceItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 193
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/ServiceItemProvider.java
+END
+ModifyRelationshipItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/ModifyRelationshipItemProvider.java
+END
+ServiceFeatureDiagramItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 207
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/ServiceFeatureDiagramItemProvider.java
+END
+PossibleConfigurationsItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 208
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/PossibleConfigurationsItemProvider.java
+END
+RequiresItemProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 194
+/external/cockpit/!svn/ver/500/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit/src/edu/kit/cockpit/sfmdesigner/servicefeaturemodel/provider/RequiresItemProvider.java
+END
