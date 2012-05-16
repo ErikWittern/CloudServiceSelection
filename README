@@ -3,6 +3,11 @@ This version of the feature model designer enables:
 - determination of possible Cloud service configurations using an integrated solver
 - selection of configurations from the service models based on requirements stated in the requirements model
 
+The designer consists of three projects:
+- edu.kit.cockpit.sfmdesigner (contains meta model and corresponding model code)
+- edu.kit.cockpit.sfmdesigner.edit (contains item providers to edit model instances)
+- edu.kit.cockpit.sfmdesigner.editor (contains the Eclipse editor as plug-in and all application logic, i.e., configuration determination, requirements filter etc.)
+
 The designer requires:
 - Eclipse Modeling Tools (Helios v3.6, available at: http://www.eclipse.org/downloads/packages/release/helios/sr2)
 - Groovy-Eclipse Feature (v2.1.2.xx-20110310, available at Eclipse update site: http://dist.springsource.org/release/GRECLIPSE/e3.6/)
