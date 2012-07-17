@@ -1,0 +1,314 @@
+/**
+ * <copyright>
+ * </copyright>
+ *
+ * $Id$
+ */
+package edu.kit.cockpit.sfmdesigner.servicefeaturemodel.impl;
+
+import edu.kit.cockpit.sfmdesigner.servicefeaturemodel.AbstractFeature;
+import edu.kit.cockpit.sfmdesigner.servicefeaturemodel.InstanceFeature;
+import edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage;
+import edu.kit.cockpit.sfmdesigner.servicefeaturemodel.Variant;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Abstract Feature</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * <ul>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.impl.AbstractFeatureImpl#getContainsVariant <em>Contains Variant</em>}</li>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.impl.AbstractFeatureImpl#getChildInstanceFeatures <em>Child Instance Features</em>}</li>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.impl.AbstractFeatureImpl#isRequired <em>Required</em>}</li>
+ * </ul>
+ * </p>
+ *
+ * @generated
+ */
+public class AbstractFeatureImpl extends ServiceFeatureImpl implements AbstractFeature {
+	/**
+	 * The cached value of the '{@link #getContainsVariant() <em>Contains Variant</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getContainsVariant()
+	 * @generated
+	 * @ordered
+	 */
+	protected Variant containsVariant;
+
+	/**
+	 * The cached value of the '{@link #getChildInstanceFeatures() <em>Child Instance Features</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getChildInstanceFeatures()
+	 * @generated
+	 * @ordered
+	 */
+	protected InstanceFeature childInstanceFeatures;
+
+	/**
+	 * The default value of the '{@link #isRequired() <em>Required</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isRequired()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean REQUIRED_EDEFAULT = false;
+
+	/**
+	 * The cached value of the '{@link #isRequired() <em>Required</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isRequired()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean required = REQUIRED_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AbstractFeatureImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return ServicefeaturemodelPackage.Literals.ABSTRACT_FEATURE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Variant getContainsVariant() {
+		return containsVariant;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetContainsVariant(Variant newContainsVariant, NotificationChain msgs) {
+		Variant oldContainsVariant = containsVariant;
+		containsVariant = newContainsVariant;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ServicefeaturemodelPackage.ABSTRACT_FEATURE__CONTAINS_VARIANT, oldContainsVariant, newContainsVariant);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setContainsVariant(Variant newContainsVariant) {
+		if (newContainsVariant != containsVariant) {
+			NotificationChain msgs = null;
+			if (containsVariant != null)
+				msgs = ((InternalEObject)containsVariant).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ServicefeaturemodelPackage.ABSTRACT_FEATURE__CONTAINS_VARIANT, null, msgs);
+			if (newContainsVariant != null)
+				msgs = ((InternalEObject)newContainsVariant).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ServicefeaturemodelPackage.ABSTRACT_FEATURE__CONTAINS_VARIANT, null, msgs);
+			msgs = basicSetContainsVariant(newContainsVariant, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ServicefeaturemodelPackage.ABSTRACT_FEATURE__CONTAINS_VARIANT, newContainsVariant, newContainsVariant));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InstanceFeature getChildInstanceFeatures() {
+		return childInstanceFeatures;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetChildInstanceFeatures(InstanceFeature newChildInstanceFeatures, NotificationChain msgs) {
+		InstanceFeature oldChildInstanceFeatures = childInstanceFeatures;
+		childInstanceFeatures = newChildInstanceFeatures;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ServicefeaturemodelPackage.ABSTRACT_FEATURE__CHILD_INSTANCE_FEATURES, oldChildInstanceFeatures, newChildInstanceFeatures);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setChildInstanceFeatures(InstanceFeature newChildInstanceFeatures) {
+		if (newChildInstanceFeatures != childInstanceFeatures) {
+			NotificationChain msgs = null;
+			if (childInstanceFeatures != null)
+				msgs = ((InternalEObject)childInstanceFeatures).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ServicefeaturemodelPackage.ABSTRACT_FEATURE__CHILD_INSTANCE_FEATURES, null, msgs);
+			if (newChildInstanceFeatures != null)
+				msgs = ((InternalEObject)newChildInstanceFeatures).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ServicefeaturemodelPackage.ABSTRACT_FEATURE__CHILD_INSTANCE_FEATURES, null, msgs);
+			msgs = basicSetChildInstanceFeatures(newChildInstanceFeatures, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ServicefeaturemodelPackage.ABSTRACT_FEATURE__CHILD_INSTANCE_FEATURES, newChildInstanceFeatures, newChildInstanceFeatures));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean isRequired() {
+		return required;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setRequired(boolean newRequired) {
+		boolean oldRequired = required;
+		required = newRequired;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ServicefeaturemodelPackage.ABSTRACT_FEATURE__REQUIRED, oldRequired, required));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case ServicefeaturemodelPackage.ABSTRACT_FEATURE__CONTAINS_VARIANT:
+				return basicSetContainsVariant(null, msgs);
+			case ServicefeaturemodelPackage.ABSTRACT_FEATURE__CHILD_INSTANCE_FEATURES:
+				return basicSetChildInstanceFeatures(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case ServicefeaturemodelPackage.ABSTRACT_FEATURE__CONTAINS_VARIANT:
+				return getContainsVariant();
+			case ServicefeaturemodelPackage.ABSTRACT_FEATURE__CHILD_INSTANCE_FEATURES:
+				return getChildInstanceFeatures();
+			case ServicefeaturemodelPackage.ABSTRACT_FEATURE__REQUIRED:
+				return isRequired();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case ServicefeaturemodelPackage.ABSTRACT_FEATURE__CONTAINS_VARIANT:
+				setContainsVariant((Variant)newValue);
+				return;
+			case ServicefeaturemodelPackage.ABSTRACT_FEATURE__CHILD_INSTANCE_FEATURES:
+				setChildInstanceFeatures((InstanceFeature)newValue);
+				return;
+			case ServicefeaturemodelPackage.ABSTRACT_FEATURE__REQUIRED:
+				setRequired((Boolean)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case ServicefeaturemodelPackage.ABSTRACT_FEATURE__CONTAINS_VARIANT:
+				setContainsVariant((Variant)null);
+				return;
+			case ServicefeaturemodelPackage.ABSTRACT_FEATURE__CHILD_INSTANCE_FEATURES:
+				setChildInstanceFeatures((InstanceFeature)null);
+				return;
+			case ServicefeaturemodelPackage.ABSTRACT_FEATURE__REQUIRED:
+				setRequired(REQUIRED_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case ServicefeaturemodelPackage.ABSTRACT_FEATURE__CONTAINS_VARIANT:
+				return containsVariant != null;
+			case ServicefeaturemodelPackage.ABSTRACT_FEATURE__CHILD_INSTANCE_FEATURES:
+				return childInstanceFeatures != null;
+			case ServicefeaturemodelPackage.ABSTRACT_FEATURE__REQUIRED:
+				return required != REQUIRED_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (required: ");
+		result.append(required);
+		result.append(')');
+		return result.toString();
+	}
+
+} //AbstractFeatureImpl

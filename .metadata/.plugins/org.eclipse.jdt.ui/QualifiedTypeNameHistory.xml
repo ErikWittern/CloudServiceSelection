@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="cloudservicefeaturemodel.cloudservicefeaturemodel.Service"/>
+<fullyQualifiedTypeName name="edu.kit.cockpit.sfmdesigner.requirementsfilter.RequirementsFilterWizard"/>
+<fullyQualifiedTypeName name="org.eclipse.core.resources.IProject"/>
+<fullyQualifiedTypeName name="org.eclipse.core.resources.ResourcesPlugin"/>
+<fullyQualifiedTypeName name="org.eclipse.ui.IEditorPart"/>
+<fullyQualifiedTypeName name="org.eclipse.ui.PlatformUI"/>
+<fullyQualifiedTypeName name="org.eclipse.emf.ecore.resource.impl.ResourceSetImpl"/>
+<fullyQualifiedTypeName name="edu.kit.cockpit.sfmdesigner.analyzer.domain.AttributeType"/>
+<fullyQualifiedTypeName name="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.Configuration"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.Attribute"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="org.codehaus.groovy.ast.stmt.CaseStatement"/>
+<fullyQualifiedTypeName name="edu.kit.cockpit.sfmdesigner.requirementsfilter.RequirementsFilter"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="edu.kit.cockpit.sfmdesigner.analyzer.domain.ServiceFeature"/>
+<fullyQualifiedTypeName name="edu.kit.cockpit.sfmdesigner.requirementsfilter.ReqFilterUtils"/>
+<fullyQualifiedTypeName name="edu.kit.cockpit.sfmdesigner.requirementsfilter.RequirementsExtracter"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.eclipse.emf.ecore.EObject"/>
+<fullyQualifiedTypeName name="org.antlr.runtime.tree.TreeIterator"/>
+<fullyQualifiedTypeName name="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.MandatoryServiceFeature"/>
+</qualifiedTypeNameHistroy>

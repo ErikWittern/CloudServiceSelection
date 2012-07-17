@@ -1,0 +1,107 @@
+/**
+ * <copyright>
+ * </copyright>
+ *
+ * $Id$
+ */
+package edu.kit.cockpit.sfmdesigner.servicefeaturemodel;
+
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Abstract Feature</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * <ul>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.AbstractFeature#getContainsVariant <em>Contains Variant</em>}</li>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.AbstractFeature#getChildInstanceFeatures <em>Child Instance Features</em>}</li>
+ *   <li>{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.AbstractFeature#isRequired <em>Required</em>}</li>
+ * </ul>
+ * </p>
+ *
+ * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getAbstractFeature()
+ * @model
+ * @generated
+ */
+public interface AbstractFeature extends ServiceFeature {
+	/**
+	 * Returns the value of the '<em><b>Contains Variant</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Contains Variant</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contains Variant</em>' containment reference.
+	 * @see #setContainsVariant(Variant)
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getAbstractFeature_ContainsVariant()
+	 * @model containment="true"
+	 * @generated
+	 */
+	Variant getContainsVariant();
+
+	/**
+	 * Sets the value of the '{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.AbstractFeature#getContainsVariant <em>Contains Variant</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Contains Variant</em>' containment reference.
+	 * @see #getContainsVariant()
+	 * @generated
+	 */
+	void setContainsVariant(Variant value);
+
+	/**
+	 * Returns the value of the '<em><b>Child Instance Features</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Child Instance Features</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Child Instance Features</em>' containment reference.
+	 * @see #setChildInstanceFeatures(InstanceFeature)
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getAbstractFeature_ChildInstanceFeatures()
+	 * @model containment="true"
+	 * @generated
+	 */
+	InstanceFeature getChildInstanceFeatures();
+
+	/**
+	 * Sets the value of the '{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.AbstractFeature#getChildInstanceFeatures <em>Child Instance Features</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Child Instance Features</em>' containment reference.
+	 * @see #getChildInstanceFeatures()
+	 * @generated
+	 */
+	void setChildInstanceFeatures(InstanceFeature value);
+
+	/**
+	 * Returns the value of the '<em><b>Required</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Required</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Required</em>' attribute.
+	 * @see #setRequired(boolean)
+	 * @see edu.kit.cockpit.sfmdesigner.servicefeaturemodel.ServicefeaturemodelPackage#getAbstractFeature_Required()
+	 * @model required="true"
+	 * @generated
+	 */
+	boolean isRequired();
+
+	/**
+	 * Sets the value of the '{@link edu.kit.cockpit.sfmdesigner.servicefeaturemodel.AbstractFeature#isRequired <em>Required</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Required</em>' attribute.
+	 * @see #isRequired()
+	 * @generated
+	 */
+	void setRequired(boolean value);
+
+} // AbstractFeature

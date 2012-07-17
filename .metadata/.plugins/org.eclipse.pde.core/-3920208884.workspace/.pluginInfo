@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="1018" localization="plugin" name="%pluginName" project="edu.kit.cockpit.sfmdesigner" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1017" class="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.provider.ServiceFeatureModelEditPlugin$Implementation" localization="plugin" name="%pluginName" project="edu.kit.cockpit.sfmdesigner.edit" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1019" class="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.ServiceFeatureModelEditorPlugin$Implementation" localization="plugin" name="%pluginName" project="edu.kit.cockpit.sfmdesigner.editor" provider="%providerName">
+		<library name="pluginJars/groovy-all-1.7.8.jar"/>
+		<library name="pluginJars/choco-2.1.1-20101108.160635-17.jar"/>
+		<library name="pluginJars/activation-1.1.jar"/>
+		<library name="pluginJars/jaxb-api-2.1.jar"/>
+		<library name="pluginJars/jaxb-impl-2.1.8.jar"/>
+		<library name="pluginJars/jersey-client-1.6.jar"/>
+		<library name="pluginJars/jersey-core-1.6.jar"/>
+		<library name="pluginJars/stax-api-1.0-2.jar"/>
+		<library name="."/>
+	</bundle>
+</map>

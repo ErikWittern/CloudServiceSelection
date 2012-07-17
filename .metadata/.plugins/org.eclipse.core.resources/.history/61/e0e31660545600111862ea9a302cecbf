@@ -1,0 +1,884 @@
+/**
+ * <copyright>
+ * </copyright>
+ *
+ * $Id$
+ */
+package cloudservicefeaturemodel.cloudservicefeaturemodel.impl;
+
+import cloudservicefeaturemodel.cloudservicefeaturemodel.AggregationRules;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.Attribute;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeToAttributeModifyRelationship;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeType;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.CloudservicefeaturemodelFactory;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.CloudservicefeaturemodelPackage;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.Excludes;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.FeatureToAttributeModifyRelationship;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.MandatoryServiceFeature;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.ModifyRelationship;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.OptionalServiceFeature;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.Requires;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.ScaleOrders;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.Service;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.Variant;
+
+import org.eclipse.emf.ecore.EAttribute;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
+
+import org.eclipse.emf.ecore.impl.EPackageImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Package</b>.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class CloudservicefeaturemodelPackageImpl extends EPackageImpl implements CloudservicefeaturemodelPackage {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass serviceEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass serviceFeatureEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass optionalServiceFeatureEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass attributeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass requiresEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass excludesEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass orEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass xorEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass variantEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mandatoryServiceFeatureEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass attributeTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass modifyRelationshipEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass attributeToAttributeModifyRelationshipEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass featureToAttributeModifyRelationshipEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum aggregationRulesEEnum = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum scaleOrdersEEnum = null;
+
+	/**
+	 * Creates an instance of the model <b>Package</b>, registered with
+	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
+	 * package URI value.
+	 * <p>Note: the correct way to create the package is via the static
+	 * factory method {@link #init init()}, which also performs
+	 * initialization of the package, or returns the registered package,
+	 * if one already exists.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.emf.ecore.EPackage.Registry
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.CloudservicefeaturemodelPackage#eNS_URI
+	 * @see #init()
+	 * @generated
+	 */
+	private CloudservicefeaturemodelPackageImpl() {
+		super(eNS_URI, CloudservicefeaturemodelFactory.eINSTANCE);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private static boolean isInited = false;
+
+	/**
+	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+	 * 
+	 * <p>This method is used to initialize {@link CloudservicefeaturemodelPackage#eINSTANCE} when that field is accessed.
+	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #eNS_URI
+	 * @see #createPackageContents()
+	 * @see #initializePackageContents()
+	 * @generated
+	 */
+	public static CloudservicefeaturemodelPackage init() {
+		if (isInited) return (CloudservicefeaturemodelPackage)EPackage.Registry.INSTANCE.getEPackage(CloudservicefeaturemodelPackage.eNS_URI);
+
+		// Obtain or create and register package
+		CloudservicefeaturemodelPackageImpl theCloudservicefeaturemodelPackage = (CloudservicefeaturemodelPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof CloudservicefeaturemodelPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new CloudservicefeaturemodelPackageImpl());
+
+		isInited = true;
+
+		// Create package meta-data objects
+		theCloudservicefeaturemodelPackage.createPackageContents();
+
+		// Initialize created meta-data
+		theCloudservicefeaturemodelPackage.initializePackageContents();
+
+		// Mark meta-data to indicate it can't be changed
+		theCloudservicefeaturemodelPackage.freeze();
+
+  
+		// Update the registry and return the package
+		EPackage.Registry.INSTANCE.put(CloudservicefeaturemodelPackage.eNS_URI, theCloudservicefeaturemodelPackage);
+		return theCloudservicefeaturemodelPackage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getService() {
+		return serviceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getService_Description() {
+		return (EAttribute)serviceEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getService_Id() {
+		return (EAttribute)serviceEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getService_Name() {
+		return (EAttribute)serviceEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getService_AttributeTypes() {
+		return (EReference)serviceEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getService_RootFeature() {
+		return (EReference)serviceEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getServiceFeature() {
+		return serviceFeatureEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getServiceFeature_Name() {
+		return (EAttribute)serviceFeatureEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getServiceFeature_Attributes() {
+		return (EReference)serviceFeatureEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getServiceFeature_Variant() {
+		return (EReference)serviceFeatureEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getServiceFeature_Requires() {
+		return (EReference)serviceFeatureEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getServiceFeature_Excludes() {
+		return (EReference)serviceFeatureEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getServiceFeature_ServiceFeature() {
+		return (EReference)serviceFeatureEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getServiceFeature_MinAmount() {
+		return (EAttribute)serviceFeatureEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getServiceFeature_Description() {
+		return (EAttribute)serviceFeatureEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getServiceFeature_MaxAmount() {
+		return (EAttribute)serviceFeatureEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getServiceFeature_Id() {
+		return (EAttribute)serviceFeatureEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getOptionalServiceFeature() {
+		return optionalServiceFeatureEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAttribute() {
+		return attributeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAttribute_AttributeType() {
+		return (EReference)attributeEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAttribute_ModifyRelationships() {
+		return (EReference)attributeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAttribute_InstantiationValue() {
+		return (EAttribute)attributeEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAttribute_Id() {
+		return (EAttribute)attributeEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getRequires() {
+		return requiresEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getRequires_ServiceFeature() {
+		return (EReference)requiresEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getExcludes() {
+		return excludesEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getExcludes_ServiceFeature() {
+		return (EReference)excludesEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getOR() {
+		return orEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getOR_MinFeaturesToChoose() {
+		return (EAttribute)orEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getOR_MaxFeaturesToChoose() {
+		return (EAttribute)orEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getXOR() {
+		return xorEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getVariant() {
+		return variantEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getVariant_ServiceFeature() {
+		return (EReference)variantEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMandatoryServiceFeature() {
+		return mandatoryServiceFeatureEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAttributeType() {
+		return attributeTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAttributeType_Name() {
+		return (EAttribute)attributeTypeEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAttributeType_AggregationRule() {
+		return (EAttribute)attributeTypeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAttributeType_ScaleOrder() {
+		return (EAttribute)attributeTypeEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAttributeType_Description() {
+		return (EAttribute)attributeTypeEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getModifyRelationship() {
+		return modifyRelationshipEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getModifyRelationship_Name() {
+		return (EAttribute)modifyRelationshipEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getModifyRelationship_OrderNumber() {
+		return (EAttribute)modifyRelationshipEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getModifyRelationship_TargetParameterName() {
+		return (EAttribute)modifyRelationshipEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getModifyRelationship_Function() {
+		return (EAttribute)modifyRelationshipEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAttributeToAttributeModifyRelationship() {
+		return attributeToAttributeModifyRelationshipEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getAttributeToAttributeModifyRelationship_TriggerParameterName() {
+		return (EAttribute)attributeToAttributeModifyRelationshipEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getAttributeToAttributeModifyRelationship_TriggeredByAttribute() {
+		return (EReference)attributeToAttributeModifyRelationshipEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getFeatureToAttributeModifyRelationship() {
+		return featureToAttributeModifyRelationshipEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getFeatureToAttributeModifyRelationship_TriggeredByServiceFeature() {
+		return (EReference)featureToAttributeModifyRelationshipEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getAggregationRules() {
+		return aggregationRulesEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EEnum getScaleOrders() {
+		return scaleOrdersEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CloudservicefeaturemodelFactory getCloudservicefeaturemodelFactory() {
+		return (CloudservicefeaturemodelFactory)getEFactoryInstance();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private boolean isCreated = false;
+
+	/**
+	 * Creates the meta-model objects for the package.  This method is
+	 * guarded to have no affect on any invocation but its first.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void createPackageContents() {
+		if (isCreated) return;
+		isCreated = true;
+
+		// Create classes and their features
+		serviceEClass = createEClass(SERVICE);
+		createEAttribute(serviceEClass, SERVICE__DESCRIPTION);
+		createEAttribute(serviceEClass, SERVICE__ID);
+		createEAttribute(serviceEClass, SERVICE__NAME);
+		createEReference(serviceEClass, SERVICE__ATTRIBUTE_TYPES);
+		createEReference(serviceEClass, SERVICE__ROOT_FEATURE);
+
+		serviceFeatureEClass = createEClass(SERVICE_FEATURE);
+		createEAttribute(serviceFeatureEClass, SERVICE_FEATURE__NAME);
+		createEReference(serviceFeatureEClass, SERVICE_FEATURE__ATTRIBUTES);
+		createEReference(serviceFeatureEClass, SERVICE_FEATURE__VARIANT);
+		createEReference(serviceFeatureEClass, SERVICE_FEATURE__REQUIRES);
+		createEReference(serviceFeatureEClass, SERVICE_FEATURE__EXCLUDES);
+		createEReference(serviceFeatureEClass, SERVICE_FEATURE__SERVICE_FEATURE);
+		createEAttribute(serviceFeatureEClass, SERVICE_FEATURE__MIN_AMOUNT);
+		createEAttribute(serviceFeatureEClass, SERVICE_FEATURE__DESCRIPTION);
+		createEAttribute(serviceFeatureEClass, SERVICE_FEATURE__MAX_AMOUNT);
+		createEAttribute(serviceFeatureEClass, SERVICE_FEATURE__ID);
+
+		optionalServiceFeatureEClass = createEClass(OPTIONAL_SERVICE_FEATURE);
+
+		attributeEClass = createEClass(ATTRIBUTE);
+		createEReference(attributeEClass, ATTRIBUTE__ATTRIBUTE_TYPE);
+		createEReference(attributeEClass, ATTRIBUTE__MODIFY_RELATIONSHIPS);
+		createEAttribute(attributeEClass, ATTRIBUTE__INSTANTIATION_VALUE);
+		createEAttribute(attributeEClass, ATTRIBUTE__ID);
+
+		requiresEClass = createEClass(REQUIRES);
+		createEReference(requiresEClass, REQUIRES__SERVICE_FEATURE);
+
+		excludesEClass = createEClass(EXCLUDES);
+		createEReference(excludesEClass, EXCLUDES__SERVICE_FEATURE);
+
+		orEClass = createEClass(OR);
+		createEAttribute(orEClass, OR__MIN_FEATURES_TO_CHOOSE);
+		createEAttribute(orEClass, OR__MAX_FEATURES_TO_CHOOSE);
+
+		xorEClass = createEClass(XOR);
+
+		variantEClass = createEClass(VARIANT);
+		createEReference(variantEClass, VARIANT__SERVICE_FEATURE);
+
+		mandatoryServiceFeatureEClass = createEClass(MANDATORY_SERVICE_FEATURE);
+
+		attributeTypeEClass = createEClass(ATTRIBUTE_TYPE);
+		createEAttribute(attributeTypeEClass, ATTRIBUTE_TYPE__NAME);
+		createEAttribute(attributeTypeEClass, ATTRIBUTE_TYPE__AGGREGATION_RULE);
+		createEAttribute(attributeTypeEClass, ATTRIBUTE_TYPE__SCALE_ORDER);
+		createEAttribute(attributeTypeEClass, ATTRIBUTE_TYPE__DESCRIPTION);
+
+		modifyRelationshipEClass = createEClass(MODIFY_RELATIONSHIP);
+		createEAttribute(modifyRelationshipEClass, MODIFY_RELATIONSHIP__NAME);
+		createEAttribute(modifyRelationshipEClass, MODIFY_RELATIONSHIP__ORDER_NUMBER);
+		createEAttribute(modifyRelationshipEClass, MODIFY_RELATIONSHIP__TARGET_PARAMETER_NAME);
+		createEAttribute(modifyRelationshipEClass, MODIFY_RELATIONSHIP__FUNCTION);
+
+		attributeToAttributeModifyRelationshipEClass = createEClass(ATTRIBUTE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP);
+		createEAttribute(attributeToAttributeModifyRelationshipEClass, ATTRIBUTE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP__TRIGGER_PARAMETER_NAME);
+		createEReference(attributeToAttributeModifyRelationshipEClass, ATTRIBUTE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP__TRIGGERED_BY_ATTRIBUTE);
+
+		featureToAttributeModifyRelationshipEClass = createEClass(FEATURE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP);
+		createEReference(featureToAttributeModifyRelationshipEClass, FEATURE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP__TRIGGERED_BY_SERVICE_FEATURE);
+
+		// Create enums
+		aggregationRulesEEnum = createEEnum(AGGREGATION_RULES);
+		scaleOrdersEEnum = createEEnum(SCALE_ORDERS);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private boolean isInitialized = false;
+
+	/**
+	 * Complete the initialization of the package and its meta-model.  This
+	 * method is guarded to have no affect on any invocation but its first.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void initializePackageContents() {
+		if (isInitialized) return;
+		isInitialized = true;
+
+		// Initialize package
+		setName(eNAME);
+		setNsPrefix(eNS_PREFIX);
+		setNsURI(eNS_URI);
+
+		// Create type parameters
+
+		// Set bounds for type parameters
+
+		// Add supertypes to classes
+		optionalServiceFeatureEClass.getESuperTypes().add(this.getServiceFeature());
+		orEClass.getESuperTypes().add(this.getVariant());
+		xorEClass.getESuperTypes().add(this.getVariant());
+		mandatoryServiceFeatureEClass.getESuperTypes().add(this.getServiceFeature());
+		attributeToAttributeModifyRelationshipEClass.getESuperTypes().add(this.getModifyRelationship());
+		featureToAttributeModifyRelationshipEClass.getESuperTypes().add(this.getModifyRelationship());
+
+		// Initialize classes and features; add operations and parameters
+		initEClass(serviceEClass, Service.class, "Service", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getService_Description(), ecorePackage.getEString(), "description", null, 0, 1, Service.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getService_Id(), ecorePackage.getEString(), "id", null, 0, 1, Service.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getService_Name(), ecorePackage.getEString(), "name", null, 0, 1, Service.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getService_AttributeTypes(), this.getAttributeType(), null, "attributeTypes", null, 0, -1, Service.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getService_RootFeature(), this.getServiceFeature(), null, "rootFeature", null, 1, 1, Service.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(serviceFeatureEClass, ServiceFeature.class, "ServiceFeature", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getServiceFeature_Name(), ecorePackage.getEString(), "name", null, 0, 1, ServiceFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getServiceFeature_Attributes(), this.getAttribute(), null, "attributes", null, 0, -1, ServiceFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getServiceFeature_Variant(), this.getVariant(), null, "variant", null, 0, 1, ServiceFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getServiceFeature_Requires(), this.getRequires(), null, "requires", null, 0, -1, ServiceFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getServiceFeature_Excludes(), this.getExcludes(), null, "excludes", null, 0, -1, ServiceFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getServiceFeature_ServiceFeature(), this.getServiceFeature(), null, "serviceFeature", null, 0, -1, ServiceFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getServiceFeature_MinAmount(), ecorePackage.getEInt(), "minAmount", null, 0, 1, ServiceFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getServiceFeature_Description(), ecorePackage.getEString(), "description", null, 0, 1, ServiceFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getServiceFeature_MaxAmount(), ecorePackage.getEInt(), "maxAmount", null, 0, 1, ServiceFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getServiceFeature_Id(), ecorePackage.getEString(), "id", null, 0, 1, ServiceFeature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(optionalServiceFeatureEClass, OptionalServiceFeature.class, "OptionalServiceFeature", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(attributeEClass, Attribute.class, "Attribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getAttribute_AttributeType(), this.getAttributeType(), null, "attributeType", null, 1, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAttribute_ModifyRelationships(), this.getModifyRelationship(), null, "modifyRelationships", null, 0, -1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAttribute_InstantiationValue(), ecorePackage.getEString(), "instantiationValue", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAttribute_Id(), ecorePackage.getEString(), "id", null, 0, 1, Attribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(requiresEClass, Requires.class, "Requires", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getRequires_ServiceFeature(), this.getServiceFeature(), null, "serviceFeature", null, 1, 1, Requires.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(excludesEClass, Excludes.class, "Excludes", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getExcludes_ServiceFeature(), this.getServiceFeature(), null, "serviceFeature", null, 1, 1, Excludes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(orEClass, cloudservicefeaturemodel.cloudservicefeaturemodel.OR.class, "OR", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getOR_MinFeaturesToChoose(), ecorePackage.getEInt(), "minFeaturesToChoose", null, 0, 1, cloudservicefeaturemodel.cloudservicefeaturemodel.OR.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOR_MaxFeaturesToChoose(), ecorePackage.getEInt(), "maxFeaturesToChoose", null, 0, 1, cloudservicefeaturemodel.cloudservicefeaturemodel.OR.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(xorEClass, cloudservicefeaturemodel.cloudservicefeaturemodel.XOR.class, "XOR", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(variantEClass, Variant.class, "Variant", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getVariant_ServiceFeature(), this.getOptionalServiceFeature(), null, "serviceFeature", null, 2, -1, Variant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(mandatoryServiceFeatureEClass, MandatoryServiceFeature.class, "MandatoryServiceFeature", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(attributeTypeEClass, AttributeType.class, "AttributeType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAttributeType_Name(), ecorePackage.getEString(), "name", null, 1, 1, AttributeType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAttributeType_AggregationRule(), this.getAggregationRules(), "aggregationRule", null, 0, 1, AttributeType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAttributeType_ScaleOrder(), this.getScaleOrders(), "scaleOrder", null, 0, 1, AttributeType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAttributeType_Description(), ecorePackage.getEString(), "description", null, 0, 1, AttributeType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(modifyRelationshipEClass, ModifyRelationship.class, "ModifyRelationship", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getModifyRelationship_Name(), ecorePackage.getEString(), "name", null, 0, 1, ModifyRelationship.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModifyRelationship_OrderNumber(), ecorePackage.getEInt(), "orderNumber", null, 0, 1, ModifyRelationship.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModifyRelationship_TargetParameterName(), ecorePackage.getEString(), "targetParameterName", null, 0, 1, ModifyRelationship.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModifyRelationship_Function(), ecorePackage.getEString(), "function", null, 0, 1, ModifyRelationship.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(attributeToAttributeModifyRelationshipEClass, AttributeToAttributeModifyRelationship.class, "AttributeToAttributeModifyRelationship", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAttributeToAttributeModifyRelationship_TriggerParameterName(), ecorePackage.getEString(), "triggerParameterName", null, 0, 1, AttributeToAttributeModifyRelationship.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getAttributeToAttributeModifyRelationship_TriggeredByAttribute(), this.getAttribute(), null, "triggeredByAttribute", null, 1, 1, AttributeToAttributeModifyRelationship.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(featureToAttributeModifyRelationshipEClass, FeatureToAttributeModifyRelationship.class, "FeatureToAttributeModifyRelationship", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getFeatureToAttributeModifyRelationship_TriggeredByServiceFeature(), this.getServiceFeature(), null, "triggeredByServiceFeature", null, 1, 1, FeatureToAttributeModifyRelationship.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		// Initialize enums and add enum literals
+		initEEnum(aggregationRulesEEnum, AggregationRules.class, "AggregationRules");
+		addEEnumLiteral(aggregationRulesEEnum, AggregationRules.SUM);
+		addEEnumLiteral(aggregationRulesEEnum, AggregationRules.PRODUCT);
+		addEEnumLiteral(aggregationRulesEEnum, AggregationRules.AT_LEAST_ONCE);
+		addEEnumLiteral(aggregationRulesEEnum, AggregationRules.MINIMUM);
+		addEEnumLiteral(aggregationRulesEEnum, AggregationRules.MAXIMUM);
+
+		initEEnum(scaleOrdersEEnum, ScaleOrders.class, "ScaleOrders");
+		addEEnumLiteral(scaleOrdersEEnum, ScaleOrders.POSITIVE);
+		addEEnumLiteral(scaleOrdersEEnum, ScaleOrders.NEGATIVE);
+
+		// Create resource
+		createResource(eNS_URI);
+	}
+
+} //CloudservicefeaturemodelPackageImpl

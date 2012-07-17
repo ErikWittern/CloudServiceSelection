@@ -1,0 +1,284 @@
+/**
+ * <copyright>
+ * </copyright>
+ *
+ * $Id$
+ */
+package cloudservicefeaturemodel.cloudservicefeaturemodel.impl;
+
+import cloudservicefeaturemodel.cloudservicefeaturemodel.*;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
+
+import org.eclipse.emf.ecore.impl.EFactoryImpl;
+
+import org.eclipse.emf.ecore.plugin.EcorePlugin;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Factory</b>.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class CloudservicefeaturemodelFactoryImpl extends EFactoryImpl implements CloudservicefeaturemodelFactory {
+	/**
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static CloudservicefeaturemodelFactory init() {
+		try {
+			CloudservicefeaturemodelFactory theCloudservicefeaturemodelFactory = (CloudservicefeaturemodelFactory)EPackage.Registry.INSTANCE.getEFactory("http://cloudservicefeaturemodel/1.0"); 
+			if (theCloudservicefeaturemodelFactory != null) {
+				return theCloudservicefeaturemodelFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new CloudservicefeaturemodelFactoryImpl();
+	}
+
+	/**
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CloudservicefeaturemodelFactoryImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EObject create(EClass eClass) {
+		switch (eClass.getClassifierID()) {
+			case CloudservicefeaturemodelPackage.SERVICE: return createService();
+			case CloudservicefeaturemodelPackage.OPTIONAL_SERVICE_FEATURE: return createOptionalServiceFeature();
+			case CloudservicefeaturemodelPackage.ATTRIBUTE: return createAttribute();
+			case CloudservicefeaturemodelPackage.REQUIRES: return createRequires();
+			case CloudservicefeaturemodelPackage.EXCLUDES: return createExcludes();
+			case CloudservicefeaturemodelPackage.OR: return createOR();
+			case CloudservicefeaturemodelPackage.XOR: return createXOR();
+			case CloudservicefeaturemodelPackage.MANDATORY_SERVICE_FEATURE: return createMandatoryServiceFeature();
+			case CloudservicefeaturemodelPackage.ATTRIBUTE_TYPE: return createAttributeType();
+			case CloudservicefeaturemodelPackage.ATTRIBUTE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP: return createAttributeToAttributeModifyRelationship();
+			case CloudservicefeaturemodelPackage.FEATURE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP: return createFeatureToAttributeModifyRelationship();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object createFromString(EDataType eDataType, String initialValue) {
+		switch (eDataType.getClassifierID()) {
+			case CloudservicefeaturemodelPackage.AGGREGATION_RULES:
+				return createAggregationRulesFromString(eDataType, initialValue);
+			case CloudservicefeaturemodelPackage.SCALE_ORDERS:
+				return createScaleOrdersFromString(eDataType, initialValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String convertToString(EDataType eDataType, Object instanceValue) {
+		switch (eDataType.getClassifierID()) {
+			case CloudservicefeaturemodelPackage.AGGREGATION_RULES:
+				return convertAggregationRulesToString(eDataType, instanceValue);
+			case CloudservicefeaturemodelPackage.SCALE_ORDERS:
+				return convertScaleOrdersToString(eDataType, instanceValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Service createService() {
+		ServiceImpl service = new ServiceImpl();
+		return service;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OptionalServiceFeature createOptionalServiceFeature() {
+		OptionalServiceFeatureImpl optionalServiceFeature = new OptionalServiceFeatureImpl();
+		return optionalServiceFeature;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Attribute createAttribute() {
+		AttributeImpl attribute = new AttributeImpl();
+		return attribute;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Requires createRequires() {
+		RequiresImpl requires = new RequiresImpl();
+		return requires;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Excludes createExcludes() {
+		ExcludesImpl excludes = new ExcludesImpl();
+		return excludes;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public OR createOR() {
+		ORImpl or = new ORImpl();
+		return or;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public XOR createXOR() {
+		XORImpl xor = new XORImpl();
+		return xor;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MandatoryServiceFeature createMandatoryServiceFeature() {
+		MandatoryServiceFeatureImpl mandatoryServiceFeature = new MandatoryServiceFeatureImpl();
+		return mandatoryServiceFeature;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AttributeType createAttributeType() {
+		AttributeTypeImpl attributeType = new AttributeTypeImpl();
+		return attributeType;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AttributeToAttributeModifyRelationship createAttributeToAttributeModifyRelationship() {
+		AttributeToAttributeModifyRelationshipImpl attributeToAttributeModifyRelationship = new AttributeToAttributeModifyRelationshipImpl();
+		return attributeToAttributeModifyRelationship;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public FeatureToAttributeModifyRelationship createFeatureToAttributeModifyRelationship() {
+		FeatureToAttributeModifyRelationshipImpl featureToAttributeModifyRelationship = new FeatureToAttributeModifyRelationshipImpl();
+		return featureToAttributeModifyRelationship;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AggregationRules createAggregationRulesFromString(EDataType eDataType, String initialValue) {
+		AggregationRules result = AggregationRules.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertAggregationRulesToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ScaleOrders createScaleOrdersFromString(EDataType eDataType, String initialValue) {
+		ScaleOrders result = ScaleOrders.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertScaleOrdersToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CloudservicefeaturemodelPackage getCloudservicefeaturemodelPackage() {
+		return (CloudservicefeaturemodelPackage)getEPackage();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @deprecated
+	 * @generated
+	 */
+	@Deprecated
+	public static CloudservicefeaturemodelPackage getPackage() {
+		return CloudservicefeaturemodelPackage.eINSTANCE;
+	}
+
+} //CloudservicefeaturemodelFactoryImpl

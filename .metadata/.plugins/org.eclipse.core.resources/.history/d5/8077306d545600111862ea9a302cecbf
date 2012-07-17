@@ -1,0 +1,80 @@
+
+# <copyright>
+# </copyright>
+#
+# $Id$
+
+pluginName = CloudServiceFeatureModel Edit Support
+providerName = www.example.org
+
+_UI_CreateChild_text = {0}
+_UI_CreateChild_text2 = {1} {0}
+_UI_CreateChild_text3 = {1}
+_UI_CreateChild_tooltip = Create New {0} Under {1} Feature
+_UI_CreateChild_description = Create a new child of type {0} for the {1} feature of the selected {2}.
+_UI_CreateSibling_description = Create a new sibling of type {0} for the selected {2}, under the {1} feature of their parent.
+
+_UI_PropertyDescriptor_description = The {0} of the {1}
+
+_UI_Service_type = Service
+_UI_ServiceFeature_type = Service Feature
+_UI_OptionalServiceFeature_type = Optional Service Feature
+_UI_Attribute_type = Attribute
+_UI_Requires_type = Requires
+_UI_Excludes_type = Excludes
+_UI_OR_type = OR
+_UI_XOR_type = XOR
+_UI_Variant_type = Variant
+_UI_MandatoryServiceFeature_type = Mandatory Service Feature
+_UI_AttributeType_type = Attribute Type
+_UI_ModifyRelationship_type = Modify Relationship
+_UI_AttributeToAttributeModifyRelationship_type = Attribute To Attribute Modify Relationship
+_UI_FeatureToAttributeModifyRelationship_type = Feature To Attribute Modify Relationship
+_UI_Unknown_type = Object
+
+_UI_Unknown_datatype= Value
+
+_UI_Service_description_feature = Description
+_UI_Service_id_feature = Id
+_UI_Service_name_feature = Name
+_UI_Service_attributeTypes_feature = Attribute Types
+_UI_Service_rootFeature_feature = Root Feature
+_UI_ServiceFeature_name_feature = Name
+_UI_ServiceFeature_attributes_feature = Attributes
+_UI_ServiceFeature_variant_feature = Variant
+_UI_ServiceFeature_requires_feature = Requires
+_UI_ServiceFeature_excludes_feature = Excludes
+_UI_ServiceFeature_serviceFeature_feature = Service Feature
+_UI_ServiceFeature_minAmount_feature = Min Amount
+_UI_ServiceFeature_description_feature = Description
+_UI_ServiceFeature_maxAmount_feature = Max Amount
+_UI_ServiceFeature_id_feature = Id
+_UI_Attribute_attributeType_feature = Attribute Type
+_UI_Attribute_modifyRelationships_feature = Modify Relationships
+_UI_Attribute_instantiationValue_feature = Instantiation Value
+_UI_Attribute_id_feature = Id
+_UI_Requires_serviceFeature_feature = Service Feature
+_UI_Excludes_serviceFeature_feature = Service Feature
+_UI_OR_minFeaturesToChoose_feature = Min Features To Choose
+_UI_OR_maxFeaturesToChoose_feature = Max Features To Choose
+_UI_Variant_serviceFeature_feature = Service Feature
+_UI_AttributeType_name_feature = Name
+_UI_AttributeType_aggregationRule_feature = Aggregation Rule
+_UI_AttributeType_scaleOrder_feature = Scale Order
+_UI_AttributeType_description_feature = Description
+_UI_ModifyRelationship_name_feature = Name
+_UI_ModifyRelationship_orderNumber_feature = Order Number
+_UI_ModifyRelationship_targetParameterName_feature = Target Parameter Name
+_UI_ModifyRelationship_function_feature = Function
+_UI_AttributeToAttributeModifyRelationship_triggerParameterName_feature = Trigger Parameter Name
+_UI_AttributeToAttributeModifyRelationship_triggeredByAttribute_feature = Triggered By Attribute
+_UI_FeatureToAttributeModifyRelationship_triggeredByServiceFeature_feature = Triggered By Service Feature
+_UI_Unknown_feature = Unspecified
+
+_UI_AggregationRules_Sum_literal = Sum
+_UI_AggregationRules_Product_literal = Product
+_UI_AggregationRules_AtLeastOnce_literal = AtLeastOnce
+_UI_AggregationRules_Minimum_literal = Minimum
+_UI_AggregationRules_Maximum_literal = Maximum
+_UI_ScaleOrders_positive_literal = positive
+_UI_ScaleOrders_negative_literal = negative

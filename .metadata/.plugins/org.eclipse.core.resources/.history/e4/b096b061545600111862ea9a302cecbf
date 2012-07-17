@@ -1,0 +1,619 @@
+/**
+ * <copyright>
+ * </copyright>
+ *
+ * $Id$
+ */
+package cloudservicefeaturemodel.cloudservicefeaturemodel.impl;
+
+import cloudservicefeaturemodel.cloudservicefeaturemodel.Attribute;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.CloudservicefeaturemodelPackage;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.Excludes;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.Requires;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature;
+import cloudservicefeaturemodel.cloudservicefeaturemodel.Variant;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.EObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Service Feature</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * <ul>
+ *   <li>{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceFeatureImpl#getName <em>Name</em>}</li>
+ *   <li>{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceFeatureImpl#getAttributes <em>Attributes</em>}</li>
+ *   <li>{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceFeatureImpl#getVariant <em>Variant</em>}</li>
+ *   <li>{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceFeatureImpl#getRequires <em>Requires</em>}</li>
+ *   <li>{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceFeatureImpl#getExcludes <em>Excludes</em>}</li>
+ *   <li>{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceFeatureImpl#getServiceFeature <em>Service Feature</em>}</li>
+ *   <li>{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceFeatureImpl#getMinAmount <em>Min Amount</em>}</li>
+ *   <li>{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceFeatureImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceFeatureImpl#getMaxAmount <em>Max Amount</em>}</li>
+ *   <li>{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceFeatureImpl#getId <em>Id</em>}</li>
+ * </ul>
+ * </p>
+ *
+ * @generated
+ */
+public abstract class ServiceFeatureImpl extends EObjectImpl implements ServiceFeature {
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getAttributes() <em>Attributes</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAttributes()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Attribute> attributes;
+
+	/**
+	 * The cached value of the '{@link #getVariant() <em>Variant</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getVariant()
+	 * @generated
+	 * @ordered
+	 */
+	protected Variant variant;
+
+	/**
+	 * The cached value of the '{@link #getRequires() <em>Requires</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getRequires()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Requires> requires;
+
+	/**
+	 * The cached value of the '{@link #getExcludes() <em>Excludes</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getExcludes()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Excludes> excludes;
+
+	/**
+	 * The cached value of the '{@link #getServiceFeature() <em>Service Feature</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getServiceFeature()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<ServiceFeature> serviceFeature;
+
+	/**
+	 * The default value of the '{@link #getMinAmount() <em>Min Amount</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMinAmount()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int MIN_AMOUNT_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getMinAmount() <em>Min Amount</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMinAmount()
+	 * @generated
+	 * @ordered
+	 */
+	protected int minAmount = MIN_AMOUNT_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String DESCRIPTION_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getDescription() <em>Description</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDescription()
+	 * @generated
+	 * @ordered
+	 */
+	protected String description = DESCRIPTION_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getMaxAmount() <em>Max Amount</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMaxAmount()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int MAX_AMOUNT_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getMaxAmount() <em>Max Amount</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMaxAmount()
+	 * @generated
+	 * @ordered
+	 */
+	protected int maxAmount = MAX_AMOUNT_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getId()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String ID_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getId() <em>Id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getId()
+	 * @generated
+	 * @ordered
+	 */
+	protected String id = ID_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ServiceFeatureImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return CloudservicefeaturemodelPackage.Literals.SERVICE_FEATURE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CloudservicefeaturemodelPackage.SERVICE_FEATURE__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Attribute> getAttributes() {
+		if (attributes == null) {
+			attributes = new EObjectContainmentEList<Attribute>(Attribute.class, this, CloudservicefeaturemodelPackage.SERVICE_FEATURE__ATTRIBUTES);
+		}
+		return attributes;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Variant getVariant() {
+		return variant;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetVariant(Variant newVariant, NotificationChain msgs) {
+		Variant oldVariant = variant;
+		variant = newVariant;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CloudservicefeaturemodelPackage.SERVICE_FEATURE__VARIANT, oldVariant, newVariant);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setVariant(Variant newVariant) {
+		if (newVariant != variant) {
+			NotificationChain msgs = null;
+			if (variant != null)
+				msgs = ((InternalEObject)variant).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CloudservicefeaturemodelPackage.SERVICE_FEATURE__VARIANT, null, msgs);
+			if (newVariant != null)
+				msgs = ((InternalEObject)newVariant).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CloudservicefeaturemodelPackage.SERVICE_FEATURE__VARIANT, null, msgs);
+			msgs = basicSetVariant(newVariant, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CloudservicefeaturemodelPackage.SERVICE_FEATURE__VARIANT, newVariant, newVariant));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Requires> getRequires() {
+		if (requires == null) {
+			requires = new EObjectContainmentEList<Requires>(Requires.class, this, CloudservicefeaturemodelPackage.SERVICE_FEATURE__REQUIRES);
+		}
+		return requires;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Excludes> getExcludes() {
+		if (excludes == null) {
+			excludes = new EObjectContainmentEList<Excludes>(Excludes.class, this, CloudservicefeaturemodelPackage.SERVICE_FEATURE__EXCLUDES);
+		}
+		return excludes;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ServiceFeature> getServiceFeature() {
+		if (serviceFeature == null) {
+			serviceFeature = new EObjectContainmentEList<ServiceFeature>(ServiceFeature.class, this, CloudservicefeaturemodelPackage.SERVICE_FEATURE__SERVICE_FEATURE);
+		}
+		return serviceFeature;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public int getMinAmount() {
+		return minAmount;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setMinAmount(int newMinAmount) {
+		int oldMinAmount = minAmount;
+		minAmount = newMinAmount;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CloudservicefeaturemodelPackage.SERVICE_FEATURE__MIN_AMOUNT, oldMinAmount, minAmount));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getDescription() {
+		return description;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDescription(String newDescription) {
+		String oldDescription = description;
+		description = newDescription;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CloudservicefeaturemodelPackage.SERVICE_FEATURE__DESCRIPTION, oldDescription, description));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public int getMaxAmount() {
+		return maxAmount;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setMaxAmount(int newMaxAmount) {
+		int oldMaxAmount = maxAmount;
+		maxAmount = newMaxAmount;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CloudservicefeaturemodelPackage.SERVICE_FEATURE__MAX_AMOUNT, oldMaxAmount, maxAmount));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getId() {
+		return id;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setId(String newId) {
+		String oldId = id;
+		id = newId;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, CloudservicefeaturemodelPackage.SERVICE_FEATURE__ID, oldId, id));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__ATTRIBUTES:
+				return ((InternalEList<?>)getAttributes()).basicRemove(otherEnd, msgs);
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__VARIANT:
+				return basicSetVariant(null, msgs);
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__REQUIRES:
+				return ((InternalEList<?>)getRequires()).basicRemove(otherEnd, msgs);
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__EXCLUDES:
+				return ((InternalEList<?>)getExcludes()).basicRemove(otherEnd, msgs);
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__SERVICE_FEATURE:
+				return ((InternalEList<?>)getServiceFeature()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__NAME:
+				return getName();
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__ATTRIBUTES:
+				return getAttributes();
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__VARIANT:
+				return getVariant();
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__REQUIRES:
+				return getRequires();
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__EXCLUDES:
+				return getExcludes();
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__SERVICE_FEATURE:
+				return getServiceFeature();
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__MIN_AMOUNT:
+				return getMinAmount();
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__DESCRIPTION:
+				return getDescription();
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__MAX_AMOUNT:
+				return getMaxAmount();
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__ID:
+				return getId();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__NAME:
+				setName((String)newValue);
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__ATTRIBUTES:
+				getAttributes().clear();
+				getAttributes().addAll((Collection<? extends Attribute>)newValue);
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__VARIANT:
+				setVariant((Variant)newValue);
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__REQUIRES:
+				getRequires().clear();
+				getRequires().addAll((Collection<? extends Requires>)newValue);
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__EXCLUDES:
+				getExcludes().clear();
+				getExcludes().addAll((Collection<? extends Excludes>)newValue);
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__SERVICE_FEATURE:
+				getServiceFeature().clear();
+				getServiceFeature().addAll((Collection<? extends ServiceFeature>)newValue);
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__MIN_AMOUNT:
+				setMinAmount((Integer)newValue);
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__DESCRIPTION:
+				setDescription((String)newValue);
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__MAX_AMOUNT:
+				setMaxAmount((Integer)newValue);
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__ID:
+				setId((String)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__NAME:
+				setName(NAME_EDEFAULT);
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__ATTRIBUTES:
+				getAttributes().clear();
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__VARIANT:
+				setVariant((Variant)null);
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__REQUIRES:
+				getRequires().clear();
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__EXCLUDES:
+				getExcludes().clear();
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__SERVICE_FEATURE:
+				getServiceFeature().clear();
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__MIN_AMOUNT:
+				setMinAmount(MIN_AMOUNT_EDEFAULT);
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__DESCRIPTION:
+				setDescription(DESCRIPTION_EDEFAULT);
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__MAX_AMOUNT:
+				setMaxAmount(MAX_AMOUNT_EDEFAULT);
+				return;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__ID:
+				setId(ID_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__ATTRIBUTES:
+				return attributes != null && !attributes.isEmpty();
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__VARIANT:
+				return variant != null;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__REQUIRES:
+				return requires != null && !requires.isEmpty();
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__EXCLUDES:
+				return excludes != null && !excludes.isEmpty();
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__SERVICE_FEATURE:
+				return serviceFeature != null && !serviceFeature.isEmpty();
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__MIN_AMOUNT:
+				return minAmount != MIN_AMOUNT_EDEFAULT;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__DESCRIPTION:
+				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__MAX_AMOUNT:
+				return maxAmount != MAX_AMOUNT_EDEFAULT;
+			case CloudservicefeaturemodelPackage.SERVICE_FEATURE__ID:
+				return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(", minAmount: ");
+		result.append(minAmount);
+		result.append(", description: ");
+		result.append(description);
+		result.append(", maxAmount: ");
+		result.append(maxAmount);
+		result.append(", id: ");
+		result.append(id);
+		result.append(')');
+		return result.toString();
+	}
+
+} //ServiceFeatureImpl

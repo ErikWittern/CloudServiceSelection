@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="cloudservicefeaturemodel"
+    nsURI="http://cloudservicefeaturemodel/1.0" nsPrefix="cloudservicefeaturemodel">
+  <eClassifiers xsi:type="ecore:EClass" name="Service">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributeTypes" upperBound="-1"
+        eType="#//AttributeType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rootFeature" lowerBound="1"
+        eType="#//ServiceFeature" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ServiceFeature" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributes" upperBound="-1"
+        eType="#//Attribute" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variant" eType="#//Variant"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requires" upperBound="-1"
+        eType="#//Requires" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="excludes" upperBound="-1"
+        eType="#//Excludes" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="serviceFeature" upperBound="-1"
+        eType="#//ServiceFeature" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="minAmount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxAmount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OptionalServiceFeature" eSuperTypes="#//ServiceFeature"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Attribute">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributeType" lowerBound="1"
+        eType="#//AttributeType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modifyRelationships" upperBound="-1"
+        eType="#//ModifyRelationship" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="instantiationValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Requires">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="serviceFeature" lowerBound="1"
+        eType="#//ServiceFeature"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Excludes">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="serviceFeature" lowerBound="1"
+        eType="#//ServiceFeature"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OR" eSuperTypes="#//Variant">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="minFeaturesToChoose" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxFeaturesToChoose" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="XOR" eSuperTypes="#//Variant"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Variant" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="serviceFeature" lowerBound="2"
+        upperBound="-1" eType="#//OptionalServiceFeature" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MandatoryServiceFeature" eSuperTypes="#//ServiceFeature"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeType">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="aggregationRule" eType="#//AggregationRules"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scaleOrder" eType="#//ScaleOrders"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="AggregationRules">
+    <eLiterals name="Sum"/>
+    <eLiterals name="Product" value="1"/>
+    <eLiterals name="AtLeastOnce" value="2"/>
+    <eLiterals name="Minimum" value="3"/>
+    <eLiterals name="Maximum" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ScaleOrders">
+    <eLiterals name="positive" literal="positive"/>
+    <eLiterals name="negative" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ModifyRelationship" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="orderNumber" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="targetParameterName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="function" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeToAttributeModifyRelationship"
+      eSuperTypes="#//ModifyRelationship">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="triggerParameterName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="triggeredByAttribute" lowerBound="1"
+        eType="#//Attribute"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FeatureToAttributeModifyRelationship"
+      eSuperTypes="#//ModifyRelationship">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="triggeredByServiceFeature"
+        lowerBound="1" eType="#//ServiceFeature"/>
+  </eClassifiers>
+</ecore:EPackage>

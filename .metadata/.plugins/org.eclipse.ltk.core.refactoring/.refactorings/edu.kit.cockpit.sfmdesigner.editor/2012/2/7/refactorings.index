@@ -1,0 +1,8 @@
+1329403034129	Copy compilation unit
+1329403066086	Rename type 'EvaluationManagementWizardActionDelegate'
+1329403080337	Copy compilation units
+1329403103700	Rename type 'NewEvaluationWizard'
+1329403135235	Rename type 'NewEvaluationWizardAttributeConfigurationPage'
+1329406343689	Rename field 'selectedTemplate'
+1329406450227	Rename local variable 'containerLabel'
+1329406779762	Rename method 'getSelection'

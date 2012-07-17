@@ -1,0 +1,1944 @@
+/**
+ * <copyright>
+ * </copyright>
+ *
+ * $Id$
+ */
+package cloudservicefeaturemodel.cloudservicefeaturemodel;
+
+import org.eclipse.emf.ecore.EAttribute;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
+
+/**
+ * <!-- begin-user-doc -->
+ * The <b>Package</b> for the model.
+ * It contains accessors for the meta objects to represent
+ * <ul>
+ *   <li>each class,</li>
+ *   <li>each feature of each class,</li>
+ *   <li>each enum,</li>
+ *   <li>and each data type</li>
+ * </ul>
+ * <!-- end-user-doc -->
+ * @see cloudservicefeaturemodel.cloudservicefeaturemodel.CloudservicefeaturemodelFactory
+ * @model kind="package"
+ * @generated
+ */
+public interface CloudservicefeaturemodelPackage extends EPackage {
+	/**
+	 * The package name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNAME = "cloudservicefeaturemodel";
+
+	/**
+	 * The package namespace URI.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_URI = "http://cloudservicefeaturemodel/1.0";
+
+	/**
+	 * The package namespace name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_PREFIX = "cloudservicefeaturemodel";
+
+	/**
+	 * The singleton instance of the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	CloudservicefeaturemodelPackage eINSTANCE = cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl.init();
+
+	/**
+	 * The meta object id for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceImpl <em>Service</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceImpl
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getService()
+	 * @generated
+	 */
+	int SERVICE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE__DESCRIPTION = 0;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE__ID = 1;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE__NAME = 2;
+
+	/**
+	 * The feature id for the '<em><b>Attribute Types</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE__ATTRIBUTE_TYPES = 3;
+
+	/**
+	 * The feature id for the '<em><b>Root Feature</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE__ROOT_FEATURE = 4;
+
+	/**
+	 * The number of structural features of the '<em>Service</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_FEATURE_COUNT = 5;
+
+	/**
+	 * The meta object id for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceFeatureImpl <em>Service Feature</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceFeatureImpl
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getServiceFeature()
+	 * @generated
+	 */
+	int SERVICE_FEATURE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_FEATURE__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_FEATURE__ATTRIBUTES = 1;
+
+	/**
+	 * The feature id for the '<em><b>Variant</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_FEATURE__VARIANT = 2;
+
+	/**
+	 * The feature id for the '<em><b>Requires</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_FEATURE__REQUIRES = 3;
+
+	/**
+	 * The feature id for the '<em><b>Excludes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_FEATURE__EXCLUDES = 4;
+
+	/**
+	 * The feature id for the '<em><b>Service Feature</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_FEATURE__SERVICE_FEATURE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Min Amount</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_FEATURE__MIN_AMOUNT = 6;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_FEATURE__DESCRIPTION = 7;
+
+	/**
+	 * The feature id for the '<em><b>Max Amount</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_FEATURE__MAX_AMOUNT = 8;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_FEATURE__ID = 9;
+
+	/**
+	 * The number of structural features of the '<em>Service Feature</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERVICE_FEATURE_FEATURE_COUNT = 10;
+
+	/**
+	 * The meta object id for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.OptionalServiceFeatureImpl <em>Optional Service Feature</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.OptionalServiceFeatureImpl
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getOptionalServiceFeature()
+	 * @generated
+	 */
+	int OPTIONAL_SERVICE_FEATURE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTIONAL_SERVICE_FEATURE__NAME = SERVICE_FEATURE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTIONAL_SERVICE_FEATURE__ATTRIBUTES = SERVICE_FEATURE__ATTRIBUTES;
+
+	/**
+	 * The feature id for the '<em><b>Variant</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTIONAL_SERVICE_FEATURE__VARIANT = SERVICE_FEATURE__VARIANT;
+
+	/**
+	 * The feature id for the '<em><b>Requires</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTIONAL_SERVICE_FEATURE__REQUIRES = SERVICE_FEATURE__REQUIRES;
+
+	/**
+	 * The feature id for the '<em><b>Excludes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTIONAL_SERVICE_FEATURE__EXCLUDES = SERVICE_FEATURE__EXCLUDES;
+
+	/**
+	 * The feature id for the '<em><b>Service Feature</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTIONAL_SERVICE_FEATURE__SERVICE_FEATURE = SERVICE_FEATURE__SERVICE_FEATURE;
+
+	/**
+	 * The feature id for the '<em><b>Min Amount</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTIONAL_SERVICE_FEATURE__MIN_AMOUNT = SERVICE_FEATURE__MIN_AMOUNT;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTIONAL_SERVICE_FEATURE__DESCRIPTION = SERVICE_FEATURE__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Max Amount</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTIONAL_SERVICE_FEATURE__MAX_AMOUNT = SERVICE_FEATURE__MAX_AMOUNT;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTIONAL_SERVICE_FEATURE__ID = SERVICE_FEATURE__ID;
+
+	/**
+	 * The number of structural features of the '<em>Optional Service Feature</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OPTIONAL_SERVICE_FEATURE_FEATURE_COUNT = SERVICE_FEATURE_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.AttributeImpl <em>Attribute</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.AttributeImpl
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getAttribute()
+	 * @generated
+	 */
+	int ATTRIBUTE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Attribute Type</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE__ATTRIBUTE_TYPE = 0;
+
+	/**
+	 * The feature id for the '<em><b>Modify Relationships</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE__MODIFY_RELATIONSHIPS = 1;
+
+	/**
+	 * The feature id for the '<em><b>Instantiation Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE__INSTANTIATION_VALUE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE__ID = 3;
+
+	/**
+	 * The number of structural features of the '<em>Attribute</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_FEATURE_COUNT = 4;
+
+	/**
+	 * The meta object id for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.RequiresImpl <em>Requires</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.RequiresImpl
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getRequires()
+	 * @generated
+	 */
+	int REQUIRES = 4;
+
+	/**
+	 * The feature id for the '<em><b>Service Feature</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRES__SERVICE_FEATURE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Requires</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REQUIRES_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ExcludesImpl <em>Excludes</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ExcludesImpl
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getExcludes()
+	 * @generated
+	 */
+	int EXCLUDES = 5;
+
+	/**
+	 * The feature id for the '<em><b>Service Feature</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXCLUDES__SERVICE_FEATURE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Excludes</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXCLUDES_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.VariantImpl <em>Variant</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.VariantImpl
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getVariant()
+	 * @generated
+	 */
+	int VARIANT = 8;
+
+	/**
+	 * The feature id for the '<em><b>Service Feature</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VARIANT__SERVICE_FEATURE = 0;
+
+	/**
+	 * The number of structural features of the '<em>Variant</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VARIANT_FEATURE_COUNT = 1;
+
+	/**
+	 * The meta object id for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ORImpl <em>OR</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ORImpl
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getOR()
+	 * @generated
+	 */
+	int OR = 6;
+
+	/**
+	 * The feature id for the '<em><b>Service Feature</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OR__SERVICE_FEATURE = VARIANT__SERVICE_FEATURE;
+
+	/**
+	 * The feature id for the '<em><b>Min Features To Choose</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OR__MIN_FEATURES_TO_CHOOSE = VARIANT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Max Features To Choose</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OR__MAX_FEATURES_TO_CHOOSE = VARIANT_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>OR</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OR_FEATURE_COUNT = VARIANT_FEATURE_COUNT + 2;
+
+	/**
+	 * The meta object id for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.XORImpl <em>XOR</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.XORImpl
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getXOR()
+	 * @generated
+	 */
+	int XOR = 7;
+
+	/**
+	 * The feature id for the '<em><b>Service Feature</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XOR__SERVICE_FEATURE = VARIANT__SERVICE_FEATURE;
+
+	/**
+	 * The number of structural features of the '<em>XOR</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int XOR_FEATURE_COUNT = VARIANT_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.MandatoryServiceFeatureImpl <em>Mandatory Service Feature</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.MandatoryServiceFeatureImpl
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getMandatoryServiceFeature()
+	 * @generated
+	 */
+	int MANDATORY_SERVICE_FEATURE = 9;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANDATORY_SERVICE_FEATURE__NAME = SERVICE_FEATURE__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Attributes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANDATORY_SERVICE_FEATURE__ATTRIBUTES = SERVICE_FEATURE__ATTRIBUTES;
+
+	/**
+	 * The feature id for the '<em><b>Variant</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANDATORY_SERVICE_FEATURE__VARIANT = SERVICE_FEATURE__VARIANT;
+
+	/**
+	 * The feature id for the '<em><b>Requires</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANDATORY_SERVICE_FEATURE__REQUIRES = SERVICE_FEATURE__REQUIRES;
+
+	/**
+	 * The feature id for the '<em><b>Excludes</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANDATORY_SERVICE_FEATURE__EXCLUDES = SERVICE_FEATURE__EXCLUDES;
+
+	/**
+	 * The feature id for the '<em><b>Service Feature</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANDATORY_SERVICE_FEATURE__SERVICE_FEATURE = SERVICE_FEATURE__SERVICE_FEATURE;
+
+	/**
+	 * The feature id for the '<em><b>Min Amount</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANDATORY_SERVICE_FEATURE__MIN_AMOUNT = SERVICE_FEATURE__MIN_AMOUNT;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANDATORY_SERVICE_FEATURE__DESCRIPTION = SERVICE_FEATURE__DESCRIPTION;
+
+	/**
+	 * The feature id for the '<em><b>Max Amount</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANDATORY_SERVICE_FEATURE__MAX_AMOUNT = SERVICE_FEATURE__MAX_AMOUNT;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANDATORY_SERVICE_FEATURE__ID = SERVICE_FEATURE__ID;
+
+	/**
+	 * The number of structural features of the '<em>Mandatory Service Feature</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MANDATORY_SERVICE_FEATURE_FEATURE_COUNT = SERVICE_FEATURE_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.AttributeTypeImpl <em>Attribute Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.AttributeTypeImpl
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getAttributeType()
+	 * @generated
+	 */
+	int ATTRIBUTE_TYPE = 10;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_TYPE__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Aggregation Rule</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_TYPE__AGGREGATION_RULE = 1;
+
+	/**
+	 * The feature id for the '<em><b>Scale Order</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_TYPE__SCALE_ORDER = 2;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_TYPE__DESCRIPTION = 3;
+
+	/**
+	 * The number of structural features of the '<em>Attribute Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_TYPE_FEATURE_COUNT = 4;
+
+	/**
+	 * The meta object id for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ModifyRelationshipImpl <em>Modify Relationship</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ModifyRelationshipImpl
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getModifyRelationship()
+	 * @generated
+	 */
+	int MODIFY_RELATIONSHIP = 11;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODIFY_RELATIONSHIP__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Order Number</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODIFY_RELATIONSHIP__ORDER_NUMBER = 1;
+
+	/**
+	 * The feature id for the '<em><b>Target Parameter Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODIFY_RELATIONSHIP__TARGET_PARAMETER_NAME = 2;
+
+	/**
+	 * The feature id for the '<em><b>Function</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODIFY_RELATIONSHIP__FUNCTION = 3;
+
+	/**
+	 * The number of structural features of the '<em>Modify Relationship</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODIFY_RELATIONSHIP_FEATURE_COUNT = 4;
+
+	/**
+	 * The meta object id for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.AttributeToAttributeModifyRelationshipImpl <em>Attribute To Attribute Modify Relationship</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.AttributeToAttributeModifyRelationshipImpl
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getAttributeToAttributeModifyRelationship()
+	 * @generated
+	 */
+	int ATTRIBUTE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP = 12;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP__NAME = MODIFY_RELATIONSHIP__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Order Number</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP__ORDER_NUMBER = MODIFY_RELATIONSHIP__ORDER_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Target Parameter Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP__TARGET_PARAMETER_NAME = MODIFY_RELATIONSHIP__TARGET_PARAMETER_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Function</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP__FUNCTION = MODIFY_RELATIONSHIP__FUNCTION;
+
+	/**
+	 * The feature id for the '<em><b>Trigger Parameter Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP__TRIGGER_PARAMETER_NAME = MODIFY_RELATIONSHIP_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Triggered By Attribute</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP__TRIGGERED_BY_ATTRIBUTE = MODIFY_RELATIONSHIP_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Attribute To Attribute Modify Relationship</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTRIBUTE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP_FEATURE_COUNT = MODIFY_RELATIONSHIP_FEATURE_COUNT + 2;
+
+	/**
+	 * The meta object id for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.FeatureToAttributeModifyRelationshipImpl <em>Feature To Attribute Modify Relationship</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.FeatureToAttributeModifyRelationshipImpl
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getFeatureToAttributeModifyRelationship()
+	 * @generated
+	 */
+	int FEATURE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP = 13;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FEATURE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP__NAME = MODIFY_RELATIONSHIP__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Order Number</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FEATURE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP__ORDER_NUMBER = MODIFY_RELATIONSHIP__ORDER_NUMBER;
+
+	/**
+	 * The feature id for the '<em><b>Target Parameter Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FEATURE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP__TARGET_PARAMETER_NAME = MODIFY_RELATIONSHIP__TARGET_PARAMETER_NAME;
+
+	/**
+	 * The feature id for the '<em><b>Function</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FEATURE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP__FUNCTION = MODIFY_RELATIONSHIP__FUNCTION;
+
+	/**
+	 * The feature id for the '<em><b>Triggered By Service Feature</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FEATURE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP__TRIGGERED_BY_SERVICE_FEATURE = MODIFY_RELATIONSHIP_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Feature To Attribute Modify Relationship</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FEATURE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP_FEATURE_COUNT = MODIFY_RELATIONSHIP_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.AggregationRules <em>Aggregation Rules</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.AggregationRules
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getAggregationRules()
+	 * @generated
+	 */
+	int AGGREGATION_RULES = 14;
+
+	/**
+	 * The meta object id for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ScaleOrders <em>Scale Orders</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ScaleOrders
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getScaleOrders()
+	 * @generated
+	 */
+	int SCALE_ORDERS = 15;
+
+
+	/**
+	 * Returns the meta object for class '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.Service <em>Service</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Service</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.Service
+	 * @generated
+	 */
+	EClass getService();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.Service#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.Service#getDescription()
+	 * @see #getService()
+	 * @generated
+	 */
+	EAttribute getService_Description();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.Service#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.Service#getId()
+	 * @see #getService()
+	 * @generated
+	 */
+	EAttribute getService_Id();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.Service#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.Service#getName()
+	 * @see #getService()
+	 * @generated
+	 */
+	EAttribute getService_Name();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.Service#getAttributeTypes <em>Attribute Types</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Attribute Types</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.Service#getAttributeTypes()
+	 * @see #getService()
+	 * @generated
+	 */
+	EReference getService_AttributeTypes();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.Service#getRootFeature <em>Root Feature</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Root Feature</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.Service#getRootFeature()
+	 * @see #getService()
+	 * @generated
+	 */
+	EReference getService_RootFeature();
+
+	/**
+	 * Returns the meta object for class '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature <em>Service Feature</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Service Feature</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature
+	 * @generated
+	 */
+	EClass getServiceFeature();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getName()
+	 * @see #getServiceFeature()
+	 * @generated
+	 */
+	EAttribute getServiceFeature_Name();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getAttributes <em>Attributes</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Attributes</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getAttributes()
+	 * @see #getServiceFeature()
+	 * @generated
+	 */
+	EReference getServiceFeature_Attributes();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getVariant <em>Variant</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Variant</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getVariant()
+	 * @see #getServiceFeature()
+	 * @generated
+	 */
+	EReference getServiceFeature_Variant();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getRequires <em>Requires</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Requires</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getRequires()
+	 * @see #getServiceFeature()
+	 * @generated
+	 */
+	EReference getServiceFeature_Requires();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getExcludes <em>Excludes</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Excludes</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getExcludes()
+	 * @see #getServiceFeature()
+	 * @generated
+	 */
+	EReference getServiceFeature_Excludes();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getServiceFeature <em>Service Feature</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Service Feature</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getServiceFeature()
+	 * @see #getServiceFeature()
+	 * @generated
+	 */
+	EReference getServiceFeature_ServiceFeature();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getMinAmount <em>Min Amount</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Min Amount</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getMinAmount()
+	 * @see #getServiceFeature()
+	 * @generated
+	 */
+	EAttribute getServiceFeature_MinAmount();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getDescription()
+	 * @see #getServiceFeature()
+	 * @generated
+	 */
+	EAttribute getServiceFeature_Description();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getMaxAmount <em>Max Amount</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Max Amount</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getMaxAmount()
+	 * @see #getServiceFeature()
+	 * @generated
+	 */
+	EAttribute getServiceFeature_MaxAmount();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ServiceFeature#getId()
+	 * @see #getServiceFeature()
+	 * @generated
+	 */
+	EAttribute getServiceFeature_Id();
+
+	/**
+	 * Returns the meta object for class '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.OptionalServiceFeature <em>Optional Service Feature</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Optional Service Feature</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.OptionalServiceFeature
+	 * @generated
+	 */
+	EClass getOptionalServiceFeature();
+
+	/**
+	 * Returns the meta object for class '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.Attribute <em>Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Attribute</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.Attribute
+	 * @generated
+	 */
+	EClass getAttribute();
+
+	/**
+	 * Returns the meta object for the reference '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.Attribute#getAttributeType <em>Attribute Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Attribute Type</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.Attribute#getAttributeType()
+	 * @see #getAttribute()
+	 * @generated
+	 */
+	EReference getAttribute_AttributeType();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.Attribute#getModifyRelationships <em>Modify Relationships</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Modify Relationships</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.Attribute#getModifyRelationships()
+	 * @see #getAttribute()
+	 * @generated
+	 */
+	EReference getAttribute_ModifyRelationships();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.Attribute#getInstantiationValue <em>Instantiation Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Instantiation Value</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.Attribute#getInstantiationValue()
+	 * @see #getAttribute()
+	 * @generated
+	 */
+	EAttribute getAttribute_InstantiationValue();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.Attribute#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.Attribute#getId()
+	 * @see #getAttribute()
+	 * @generated
+	 */
+	EAttribute getAttribute_Id();
+
+	/**
+	 * Returns the meta object for class '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.Requires <em>Requires</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Requires</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.Requires
+	 * @generated
+	 */
+	EClass getRequires();
+
+	/**
+	 * Returns the meta object for the reference '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.Requires#getServiceFeature <em>Service Feature</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Service Feature</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.Requires#getServiceFeature()
+	 * @see #getRequires()
+	 * @generated
+	 */
+	EReference getRequires_ServiceFeature();
+
+	/**
+	 * Returns the meta object for class '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.Excludes <em>Excludes</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Excludes</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.Excludes
+	 * @generated
+	 */
+	EClass getExcludes();
+
+	/**
+	 * Returns the meta object for the reference '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.Excludes#getServiceFeature <em>Service Feature</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Service Feature</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.Excludes#getServiceFeature()
+	 * @see #getExcludes()
+	 * @generated
+	 */
+	EReference getExcludes_ServiceFeature();
+
+	/**
+	 * Returns the meta object for class '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.OR <em>OR</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>OR</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.OR
+	 * @generated
+	 */
+	EClass getOR();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.OR#getMinFeaturesToChoose <em>Min Features To Choose</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Min Features To Choose</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.OR#getMinFeaturesToChoose()
+	 * @see #getOR()
+	 * @generated
+	 */
+	EAttribute getOR_MinFeaturesToChoose();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.OR#getMaxFeaturesToChoose <em>Max Features To Choose</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Max Features To Choose</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.OR#getMaxFeaturesToChoose()
+	 * @see #getOR()
+	 * @generated
+	 */
+	EAttribute getOR_MaxFeaturesToChoose();
+
+	/**
+	 * Returns the meta object for class '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.XOR <em>XOR</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>XOR</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.XOR
+	 * @generated
+	 */
+	EClass getXOR();
+
+	/**
+	 * Returns the meta object for class '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.Variant <em>Variant</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Variant</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.Variant
+	 * @generated
+	 */
+	EClass getVariant();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.Variant#getServiceFeature <em>Service Feature</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Service Feature</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.Variant#getServiceFeature()
+	 * @see #getVariant()
+	 * @generated
+	 */
+	EReference getVariant_ServiceFeature();
+
+	/**
+	 * Returns the meta object for class '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.MandatoryServiceFeature <em>Mandatory Service Feature</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Mandatory Service Feature</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.MandatoryServiceFeature
+	 * @generated
+	 */
+	EClass getMandatoryServiceFeature();
+
+	/**
+	 * Returns the meta object for class '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeType <em>Attribute Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Attribute Type</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeType
+	 * @generated
+	 */
+	EClass getAttributeType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeType#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeType#getName()
+	 * @see #getAttributeType()
+	 * @generated
+	 */
+	EAttribute getAttributeType_Name();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeType#getAggregationRule <em>Aggregation Rule</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Aggregation Rule</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeType#getAggregationRule()
+	 * @see #getAttributeType()
+	 * @generated
+	 */
+	EAttribute getAttributeType_AggregationRule();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeType#getScaleOrder <em>Scale Order</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Scale Order</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeType#getScaleOrder()
+	 * @see #getAttributeType()
+	 * @generated
+	 */
+	EAttribute getAttributeType_ScaleOrder();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeType#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeType#getDescription()
+	 * @see #getAttributeType()
+	 * @generated
+	 */
+	EAttribute getAttributeType_Description();
+
+	/**
+	 * Returns the meta object for class '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ModifyRelationship <em>Modify Relationship</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Modify Relationship</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ModifyRelationship
+	 * @generated
+	 */
+	EClass getModifyRelationship();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ModifyRelationship#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ModifyRelationship#getName()
+	 * @see #getModifyRelationship()
+	 * @generated
+	 */
+	EAttribute getModifyRelationship_Name();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ModifyRelationship#getOrderNumber <em>Order Number</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Order Number</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ModifyRelationship#getOrderNumber()
+	 * @see #getModifyRelationship()
+	 * @generated
+	 */
+	EAttribute getModifyRelationship_OrderNumber();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ModifyRelationship#getTargetParameterName <em>Target Parameter Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Target Parameter Name</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ModifyRelationship#getTargetParameterName()
+	 * @see #getModifyRelationship()
+	 * @generated
+	 */
+	EAttribute getModifyRelationship_TargetParameterName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ModifyRelationship#getFunction <em>Function</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Function</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ModifyRelationship#getFunction()
+	 * @see #getModifyRelationship()
+	 * @generated
+	 */
+	EAttribute getModifyRelationship_Function();
+
+	/**
+	 * Returns the meta object for class '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeToAttributeModifyRelationship <em>Attribute To Attribute Modify Relationship</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Attribute To Attribute Modify Relationship</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeToAttributeModifyRelationship
+	 * @generated
+	 */
+	EClass getAttributeToAttributeModifyRelationship();
+
+	/**
+	 * Returns the meta object for the attribute '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeToAttributeModifyRelationship#getTriggerParameterName <em>Trigger Parameter Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Trigger Parameter Name</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeToAttributeModifyRelationship#getTriggerParameterName()
+	 * @see #getAttributeToAttributeModifyRelationship()
+	 * @generated
+	 */
+	EAttribute getAttributeToAttributeModifyRelationship_TriggerParameterName();
+
+	/**
+	 * Returns the meta object for the reference '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeToAttributeModifyRelationship#getTriggeredByAttribute <em>Triggered By Attribute</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Triggered By Attribute</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.AttributeToAttributeModifyRelationship#getTriggeredByAttribute()
+	 * @see #getAttributeToAttributeModifyRelationship()
+	 * @generated
+	 */
+	EReference getAttributeToAttributeModifyRelationship_TriggeredByAttribute();
+
+	/**
+	 * Returns the meta object for class '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.FeatureToAttributeModifyRelationship <em>Feature To Attribute Modify Relationship</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Feature To Attribute Modify Relationship</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.FeatureToAttributeModifyRelationship
+	 * @generated
+	 */
+	EClass getFeatureToAttributeModifyRelationship();
+
+	/**
+	 * Returns the meta object for the reference '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.FeatureToAttributeModifyRelationship#getTriggeredByServiceFeature <em>Triggered By Service Feature</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Triggered By Service Feature</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.FeatureToAttributeModifyRelationship#getTriggeredByServiceFeature()
+	 * @see #getFeatureToAttributeModifyRelationship()
+	 * @generated
+	 */
+	EReference getFeatureToAttributeModifyRelationship_TriggeredByServiceFeature();
+
+	/**
+	 * Returns the meta object for enum '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.AggregationRules <em>Aggregation Rules</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Aggregation Rules</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.AggregationRules
+	 * @generated
+	 */
+	EEnum getAggregationRules();
+
+	/**
+	 * Returns the meta object for enum '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ScaleOrders <em>Scale Orders</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Scale Orders</em>'.
+	 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ScaleOrders
+	 * @generated
+	 */
+	EEnum getScaleOrders();
+
+	/**
+	 * Returns the factory that creates the instances of the model.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the factory that creates the instances of the model.
+	 * @generated
+	 */
+	CloudservicefeaturemodelFactory getCloudservicefeaturemodelFactory();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * Defines literals for the meta objects that represent
+	 * <ul>
+	 *   <li>each class,</li>
+	 *   <li>each feature of each class,</li>
+	 *   <li>each enum,</li>
+	 *   <li>and each data type</li>
+	 * </ul>
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	interface Literals {
+		/**
+		 * The meta object literal for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceImpl <em>Service</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceImpl
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getService()
+		 * @generated
+		 */
+		EClass SERVICE = eINSTANCE.getService();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICE__DESCRIPTION = eINSTANCE.getService_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICE__ID = eINSTANCE.getService_Id();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICE__NAME = eINSTANCE.getService_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Attribute Types</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE__ATTRIBUTE_TYPES = eINSTANCE.getService_AttributeTypes();
+
+		/**
+		 * The meta object literal for the '<em><b>Root Feature</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE__ROOT_FEATURE = eINSTANCE.getService_RootFeature();
+
+		/**
+		 * The meta object literal for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceFeatureImpl <em>Service Feature</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ServiceFeatureImpl
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getServiceFeature()
+		 * @generated
+		 */
+		EClass SERVICE_FEATURE = eINSTANCE.getServiceFeature();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICE_FEATURE__NAME = eINSTANCE.getServiceFeature_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Attributes</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_FEATURE__ATTRIBUTES = eINSTANCE.getServiceFeature_Attributes();
+
+		/**
+		 * The meta object literal for the '<em><b>Variant</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_FEATURE__VARIANT = eINSTANCE.getServiceFeature_Variant();
+
+		/**
+		 * The meta object literal for the '<em><b>Requires</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_FEATURE__REQUIRES = eINSTANCE.getServiceFeature_Requires();
+
+		/**
+		 * The meta object literal for the '<em><b>Excludes</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_FEATURE__EXCLUDES = eINSTANCE.getServiceFeature_Excludes();
+
+		/**
+		 * The meta object literal for the '<em><b>Service Feature</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SERVICE_FEATURE__SERVICE_FEATURE = eINSTANCE.getServiceFeature_ServiceFeature();
+
+		/**
+		 * The meta object literal for the '<em><b>Min Amount</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICE_FEATURE__MIN_AMOUNT = eINSTANCE.getServiceFeature_MinAmount();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICE_FEATURE__DESCRIPTION = eINSTANCE.getServiceFeature_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>Max Amount</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICE_FEATURE__MAX_AMOUNT = eINSTANCE.getServiceFeature_MaxAmount();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SERVICE_FEATURE__ID = eINSTANCE.getServiceFeature_Id();
+
+		/**
+		 * The meta object literal for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.OptionalServiceFeatureImpl <em>Optional Service Feature</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.OptionalServiceFeatureImpl
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getOptionalServiceFeature()
+		 * @generated
+		 */
+		EClass OPTIONAL_SERVICE_FEATURE = eINSTANCE.getOptionalServiceFeature();
+
+		/**
+		 * The meta object literal for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.AttributeImpl <em>Attribute</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.AttributeImpl
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getAttribute()
+		 * @generated
+		 */
+		EClass ATTRIBUTE = eINSTANCE.getAttribute();
+
+		/**
+		 * The meta object literal for the '<em><b>Attribute Type</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATTRIBUTE__ATTRIBUTE_TYPE = eINSTANCE.getAttribute_AttributeType();
+
+		/**
+		 * The meta object literal for the '<em><b>Modify Relationships</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATTRIBUTE__MODIFY_RELATIONSHIPS = eINSTANCE.getAttribute_ModifyRelationships();
+
+		/**
+		 * The meta object literal for the '<em><b>Instantiation Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ATTRIBUTE__INSTANTIATION_VALUE = eINSTANCE.getAttribute_InstantiationValue();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ATTRIBUTE__ID = eINSTANCE.getAttribute_Id();
+
+		/**
+		 * The meta object literal for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.RequiresImpl <em>Requires</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.RequiresImpl
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getRequires()
+		 * @generated
+		 */
+		EClass REQUIRES = eINSTANCE.getRequires();
+
+		/**
+		 * The meta object literal for the '<em><b>Service Feature</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference REQUIRES__SERVICE_FEATURE = eINSTANCE.getRequires_ServiceFeature();
+
+		/**
+		 * The meta object literal for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ExcludesImpl <em>Excludes</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ExcludesImpl
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getExcludes()
+		 * @generated
+		 */
+		EClass EXCLUDES = eINSTANCE.getExcludes();
+
+		/**
+		 * The meta object literal for the '<em><b>Service Feature</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference EXCLUDES__SERVICE_FEATURE = eINSTANCE.getExcludes_ServiceFeature();
+
+		/**
+		 * The meta object literal for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ORImpl <em>OR</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ORImpl
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getOR()
+		 * @generated
+		 */
+		EClass OR = eINSTANCE.getOR();
+
+		/**
+		 * The meta object literal for the '<em><b>Min Features To Choose</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OR__MIN_FEATURES_TO_CHOOSE = eINSTANCE.getOR_MinFeaturesToChoose();
+
+		/**
+		 * The meta object literal for the '<em><b>Max Features To Choose</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OR__MAX_FEATURES_TO_CHOOSE = eINSTANCE.getOR_MaxFeaturesToChoose();
+
+		/**
+		 * The meta object literal for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.XORImpl <em>XOR</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.XORImpl
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getXOR()
+		 * @generated
+		 */
+		EClass XOR = eINSTANCE.getXOR();
+
+		/**
+		 * The meta object literal for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.VariantImpl <em>Variant</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.VariantImpl
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getVariant()
+		 * @generated
+		 */
+		EClass VARIANT = eINSTANCE.getVariant();
+
+		/**
+		 * The meta object literal for the '<em><b>Service Feature</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference VARIANT__SERVICE_FEATURE = eINSTANCE.getVariant_ServiceFeature();
+
+		/**
+		 * The meta object literal for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.MandatoryServiceFeatureImpl <em>Mandatory Service Feature</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.MandatoryServiceFeatureImpl
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getMandatoryServiceFeature()
+		 * @generated
+		 */
+		EClass MANDATORY_SERVICE_FEATURE = eINSTANCE.getMandatoryServiceFeature();
+
+		/**
+		 * The meta object literal for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.AttributeTypeImpl <em>Attribute Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.AttributeTypeImpl
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getAttributeType()
+		 * @generated
+		 */
+		EClass ATTRIBUTE_TYPE = eINSTANCE.getAttributeType();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ATTRIBUTE_TYPE__NAME = eINSTANCE.getAttributeType_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Aggregation Rule</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ATTRIBUTE_TYPE__AGGREGATION_RULE = eINSTANCE.getAttributeType_AggregationRule();
+
+		/**
+		 * The meta object literal for the '<em><b>Scale Order</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ATTRIBUTE_TYPE__SCALE_ORDER = eINSTANCE.getAttributeType_ScaleOrder();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ATTRIBUTE_TYPE__DESCRIPTION = eINSTANCE.getAttributeType_Description();
+
+		/**
+		 * The meta object literal for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ModifyRelationshipImpl <em>Modify Relationship</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.ModifyRelationshipImpl
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getModifyRelationship()
+		 * @generated
+		 */
+		EClass MODIFY_RELATIONSHIP = eINSTANCE.getModifyRelationship();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODIFY_RELATIONSHIP__NAME = eINSTANCE.getModifyRelationship_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Order Number</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODIFY_RELATIONSHIP__ORDER_NUMBER = eINSTANCE.getModifyRelationship_OrderNumber();
+
+		/**
+		 * The meta object literal for the '<em><b>Target Parameter Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODIFY_RELATIONSHIP__TARGET_PARAMETER_NAME = eINSTANCE.getModifyRelationship_TargetParameterName();
+
+		/**
+		 * The meta object literal for the '<em><b>Function</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODIFY_RELATIONSHIP__FUNCTION = eINSTANCE.getModifyRelationship_Function();
+
+		/**
+		 * The meta object literal for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.AttributeToAttributeModifyRelationshipImpl <em>Attribute To Attribute Modify Relationship</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.AttributeToAttributeModifyRelationshipImpl
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getAttributeToAttributeModifyRelationship()
+		 * @generated
+		 */
+		EClass ATTRIBUTE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP = eINSTANCE.getAttributeToAttributeModifyRelationship();
+
+		/**
+		 * The meta object literal for the '<em><b>Trigger Parameter Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ATTRIBUTE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP__TRIGGER_PARAMETER_NAME = eINSTANCE.getAttributeToAttributeModifyRelationship_TriggerParameterName();
+
+		/**
+		 * The meta object literal for the '<em><b>Triggered By Attribute</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATTRIBUTE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP__TRIGGERED_BY_ATTRIBUTE = eINSTANCE.getAttributeToAttributeModifyRelationship_TriggeredByAttribute();
+
+		/**
+		 * The meta object literal for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.impl.FeatureToAttributeModifyRelationshipImpl <em>Feature To Attribute Modify Relationship</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.FeatureToAttributeModifyRelationshipImpl
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getFeatureToAttributeModifyRelationship()
+		 * @generated
+		 */
+		EClass FEATURE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP = eINSTANCE.getFeatureToAttributeModifyRelationship();
+
+		/**
+		 * The meta object literal for the '<em><b>Triggered By Service Feature</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FEATURE_TO_ATTRIBUTE_MODIFY_RELATIONSHIP__TRIGGERED_BY_SERVICE_FEATURE = eINSTANCE.getFeatureToAttributeModifyRelationship_TriggeredByServiceFeature();
+
+		/**
+		 * The meta object literal for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.AggregationRules <em>Aggregation Rules</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.AggregationRules
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getAggregationRules()
+		 * @generated
+		 */
+		EEnum AGGREGATION_RULES = eINSTANCE.getAggregationRules();
+
+		/**
+		 * The meta object literal for the '{@link cloudservicefeaturemodel.cloudservicefeaturemodel.ScaleOrders <em>Scale Orders</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.ScaleOrders
+		 * @see cloudservicefeaturemodel.cloudservicefeaturemodel.impl.CloudservicefeaturemodelPackageImpl#getScaleOrders()
+		 * @generated
+		 */
+		EEnum SCALE_ORDERS = eINSTANCE.getScaleOrders();
+
+	}
+
+} //CloudservicefeaturemodelPackage

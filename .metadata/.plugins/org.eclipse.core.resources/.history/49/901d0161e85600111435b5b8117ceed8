@@ -1,0 +1,133 @@
+
+# <copyright>
+# </copyright>
+#
+# $Id$
+
+pluginName = SFMDesigner Edit Support
+providerName = http://www.kit.edu/
+
+_UI_CreateChild_text = {0}
+_UI_CreateChild_text2 = {1} {0}
+_UI_CreateChild_text3 = {1}
+_UI_CreateChild_tooltip = Create New {0} Under {1} Feature
+_UI_CreateChild_description = Create a new child of type {0} for the {1} feature of the selected {2}.
+_UI_CreateSibling_description = Create a new sibling of type {0} for the selected {2}, under the {1} feature of their parent.
+
+_UI_PropertyDescriptor_description = The {0} of the {1}
+
+_UI_Service_type = Service
+_UI_ServiceFeature_type = Service Feature
+_UI_OptionalServiceFeature_type = Optional Service Feature
+_UI_Attribute_type = Attribute
+_UI_Requires_type = Requires
+_UI_Excludes_type = Excludes
+_UI_OR_type = OR
+_UI_XOR_type = XOR
+_UI_ServiceFeatureDiagram_type = Service Feature Diagram
+_UI_Configuration_type = Configuration
+_UI_Preference_type = Preference
+_UI_RelativeAttributePreference_type = Relative Attribute Preference
+_UI_RelativeConfigurationPreference_type = Relative Configuration Preference
+_UI_Variant_type = Variant
+_UI_MandatoryServiceFeature_type = Mandatory Service Feature
+_UI_PossibleConfigurations_type = Possible Configurations
+_UI_AttributeTypes_type = Attribute Types
+_UI_AttributeType_type = Attribute Type
+_UI_Unknown_type = Object
+
+_UI_Unknown_datatype= Value
+
+_UI_Service_representedBy_feature = Represented By
+_UI_Service_description_feature = Description
+_UI_Service_id_feature = Id
+_UI_Service_name_feature = Name
+_UI_Service_enables_feature = Enables
+_UI_Service_has_feature = Has
+_UI_ServiceFeature_name_feature = Name
+_UI_ServiceFeature_description_feature = Description
+_UI_ServiceFeature_describedBy_feature = Described By
+_UI_ServiceFeature_containsVariant_feature = Contains Variant
+_UI_ServiceFeature_containsRequires_feature = Contains Requires
+_UI_ServiceFeature_containsExcludes_feature = Contains Excludes
+_UI_ServiceFeature_decomposesInto_feature = Decomposes Into
+_UI_ServiceFeature_minAmount_feature = Min Amount
+_UI_ServiceFeature_maxAmount_feature = Max Amount
+_UI_ServiceFeature_mapsToGSMElement_feature = Maps To GSM Element
+_UI_ServiceFeature_associatedGSMElement_feature = Associated GSM Element
+_UI_Attribute_instantiationValue_feature = Instantiation Value
+_UI_Attribute_evaluatedBy_feature = Evaluated By
+_UI_Attribute_ofAttributeType_feature = Of Attribute Type
+_UI_Requires_requiresServiceFeature_feature = Requires Service Feature
+_UI_Excludes_excludesServiceFeature_feature = Excludes Service Feature
+_UI_OR_minFeaturesToChoose_feature = Min Features To Choose
+_UI_OR_maxFeaturesToChoose_feature = Max Features To Choose
+_UI_ServiceFeatureDiagram_containsFeatures_feature = Contains Features
+_UI_ServiceFeatureDiagram_name_feature = Name
+_UI_ServiceFeatureDiagram_description_feature = Description
+_UI_Configuration_name_feature = Name
+_UI_Configuration_id_feature = Id
+_UI_Configuration_groups_feature = Groups
+_UI_Configuration_evaluatedBy_feature = Evaluated By
+_UI_Configuration_describedBy_feature = Described By
+_UI_Configuration_description_feature = Description
+_UI_Preference_creationDate_feature = Creation Date
+_UI_Preference_value_feature = Value
+_UI_Preference_description_feature = Description
+_UI_Preference_stakeholderGroup_feature = Stakeholder Group
+_UI_Preference_userID_feature = User ID
+_UI_RelativeAttributePreference_relatedTo_feature = Related To
+_UI_RelativeConfigurationPreference_relatedTo_feature = Related To
+_UI_Variant_contains_feature = Contains
+_UI_PossibleConfigurations_contains_feature = Contains
+_UI_AttributeTypes_contains_feature = Contains
+_UI_AttributeType_name_feature = Name
+_UI_AttributeType_domain_feature = Domain
+_UI_AttributeType_aggregationRule_feature = Aggregation Rule
+_UI_AttributeType_scaleOrder_feature = Scale Order
+_UI_AttributeType_toBeEvaluated_feature = To Be Evaluated
+_UI_AttributeType_description_feature = Description
+_UI_Unknown_feature = Unspecified
+
+_UI_attributeDomain_Continuous_literal = Continuous
+_UI_attributeDomain_Boolean_literal = Boolean
+_UI_aggregationRules_Sum_literal = Sum
+_UI_aggregationRules_Product_literal = Product
+_UI_aggregationRules_AtLeastOnce_literal = AtLeastOnce
+_UI_scaleOrders_HigherIsBetter_literal = HigherIsBetter
+_UI_scaleOrders_LowerIsBetter_literal = LowerIsBetter
+_UI_scaleOrders_ExistenceIsBetter_literal = ExistenceIsBetter
+_UI_ServiceFeature_id_feature = Id
+_UI_AttributeDomain_Continuous_literal = Continuous
+_UI_AttributeDomain_Boolean_literal = Boolean
+_UI_AggregationRules_Sum_literal = Sum
+_UI_AggregationRules_Product_literal = Product
+_UI_AggregationRules_AtLeastOnce_literal = AtLeastOnce
+_UI_ScaleOrders_HigherIsBetter_literal = HigherIsBetter
+_UI_ScaleOrders_LowerIsBetter_literal = LowerIsBetter
+_UI_ScaleOrders_ExistenceIsBetter_literal = ExistenceIsBetter
+_UI_ServiceFeature_customAttributePriority_feature = Custom Attribute Priority
+_UI_AttributeType_customAttributeTypePriority_feature = Custom Attribute Type Priority
+_UI_ModifyRelationship_type = Modify Relationship
+_UI_AttributeToAttributeModifyRelationship_type = Attribute To Attribute Modify Relationship
+_UI_FeatureToAttributeModifyRelationship_type = Feature To Attribute Modify Relationship
+_UI_ServiceFeature_featureToAttributeModifyRelationship_feature = Feature To Attribute Modify Relationship
+_UI_Attribute_attributeToAttributeModifyRelationship_feature = Attribute To Attribute Modify Relationship
+_UI_ModifyRelationship_name_feature = Name
+_UI_ModifyRelationship_orderNumber_feature = Order Number
+_UI_ModifyRelationship_function_feature = Function
+_UI_ModifyRelationship_targetParameterName_feature = Target Parameter Name
+_UI_ModifyRelationship_targetAttribute_feature = Target Attribute
+_UI_AttributeToAttributeModifyRelationship_triggerParameterName_feature = Trigger Parameter Name
+_UI_AggregationRules_Minimum_literal = Minimum
+_UI_AggregationRules_Maximum_literal = Maximum
+_UI_Attribute_containsModifyRelationship_feature = Contains Modify Relationship
+_UI_AttributeToAttributeModifyRelationship_triggeredByAttribute_feature = Triggered By Attribute
+_UI_FeatureToAttributeModifyRelationship_triggeredByServiceFeature_feature = Triggered By Service Feature
+_UI_Attribute_id_feature = Id
+_UI_ServiceFeatureDiagram_id_feature = Id
+_UI_testtt_type = testtt
+_UI_ServiceFeature_featureType_feature = Feature Type
+_UI_FeatureTypes_Grouping_literal = Grouping
+_UI_FeatureTypes_Abstract_literal = Abstract
+_UI_FeatureTypes_Instance_literal = Instance

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommitComments>	<CommitComment>Initial import.</CommitComment>
+	<CommitComment>FIX: Requirements filter fixed.</CommitComment>
+	<CommitComment>FIX: Item Providers updated.</CommitComment>
+	<CommitComment>FEATURE: Settings added.</CommitComment>
+	<CommitComment>FIX: Correct handling of required abstract feature.</CommitComment>
+	<CommitComment>Requirements filter now considers feature requirements.</CommitComment>
+	<CommitComment>Attribute &apos;required&apos; added to ServiceFeature.</CommitComment>
+	<CommitComment>Requirements Filter added.</CommitComment>
+	<CommitComment>FIX: &apos;Finish&apos; button now correctly behaves depending on validation.</CommitComment>
+	<CommitComment>FEATURE: Wizard framework for requirements filtering added.</CommitComment>
+</CommitComments>
