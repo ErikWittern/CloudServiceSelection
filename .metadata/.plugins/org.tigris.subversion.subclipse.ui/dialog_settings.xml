@@ -2,16 +2,16 @@
 <section name="Workbench">
 	<item value="698" key="RevertDialog.location.x"/>
 	<item value="561" key="passwordStores.size.y"/>
-	<item value="271" key="RevertDialog.location.y"/>
 	<item value="776" key="passwordStores.size.x"/>
+	<item value="271" key="RevertDialog.location.y"/>
 	<item value="https://svn.aifb.kit.edu/external/cockpit/CloudServiceSelection/branch" key="UrlCombo.repositoryBrowser.3"/>
 	<item value="https://svn.aifb.kit.edu/external/cockpit/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.editor" key="UrlCombo.repositoryBrowser.0"/>
 	<item value="525" key="RevertDialog.size.x"/>
-	<item value="https://svn.aifb.kit.edu/external/cockpit/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner" key="UrlCombo.repositoryBrowser.2"/>
 	<item value="417" key="RevertDialog.size.y"/>
+	<item value="https://svn.aifb.kit.edu/external/cockpit/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner" key="UrlCombo.repositoryBrowser.2"/>
 	<item value="https://svn.aifb.kit.edu/external/cockpit/CloudServiceSelection/original_sfm_designer/edu.kit.cockpit.sfmdesigner.edit" key="UrlCombo.repositoryBrowser.1"/>
-	<item value="272" key="HistoryTableProvider.SVNHistoryPage.Date"/>
 	<item value="673" key="ChooseUrlDialog.location.x"/>
+	<item value="272" key="HistoryTableProvider.SVNHistoryPage.Date"/>
 	<item value="542" key="HistoryTableProvider.SVNHistoryPage.Comment"/>
 	<item value="164" key="ChooseUrlDialog.location.y"/>
 	<item value="109" key="HistoryTableProvider.SVNHistoryPage.Revision"/>

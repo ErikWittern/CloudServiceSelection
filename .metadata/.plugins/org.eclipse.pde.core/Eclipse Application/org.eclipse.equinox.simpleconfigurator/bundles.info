@@ -47,8 +47,8 @@ org.apache.commons.discovery,0.2.0.v201004190315,file:/Applications/Eclipse%20Cl
 org.apache.commons.el,1.0.0.v201004212143,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.apache.commons.el_1.0.0.v201004212143.jar,4,false
 org.apache.commons.httpclient,3.1.0.v201005080502,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.apache.commons.httpclient_3.1.0.v201005080502.jar,4,false
 org.apache.commons.lang,2.3.0.v201005080501,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.apache.commons.lang_2.3.0.v201005080501.jar,4,false
-org.apache.commons.logging,1.0.4.v201005080501,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.apache.commons.logging_1.0.4.v201005080501.jar,4,false
 org.apache.commons.logging,1.1.1.v201005080502,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.apache.commons.logging_1.1.1.v201005080502.jar,4,false
+org.apache.commons.logging,1.0.4.v201005080501,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.apache.commons.logging_1.0.4.v201005080501.jar,4,false
 org.apache.derby,10.5.1.1_201005192117,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.apache.derby_10.5.1.1_201005192117.jar,4,false
 org.apache.jasper,5.5.17.v201004212143,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.apache.jasper_5.5.17.v201004212143.jar,4,false
 org.apache.log4j,1.2.15.v201005080500,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.apache.log4j_1.2.15.v201005080500.jar,4,false
@@ -60,8 +60,8 @@ org.apache.xerces,2.9.0.v201005080400,file:/Applications/Eclipse%20Cloud%20Servi
 org.apache.xml.resolver,1.2.0.v201005080400,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.apache.xml.resolver_1.2.0.v201005080400.jar,4,false
 org.apache.xml.serializer,2.7.1.v201005080400,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.apache.xml.serializer_2.7.1.v201005080400.jar,4,false
 org.apache.xmlrpc,3.0.0.v20100427-1100,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.apache.xmlrpc_3.0.0.v20100427-1100.jar,4,false
-org.codehaus.groovy,1.7.8.xx-20110310-1500-e36,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.codehaus.groovy_1.7.8.xx-20110310-1500-e36/,4,false
 org.codehaus.groovy,1.6.7.xx-20110310-1500-e36,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.codehaus.groovy_1.6.7.xx-20110310-1500-e36/,4,false
+org.codehaus.groovy,1.7.8.xx-20110310-1500-e36,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.codehaus.groovy_1.7.8.xx-20110310-1500-e36/,4,false
 org.codehaus.groovy.eclipse,2.1.2.xx-20110310-1500-e36,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.codehaus.groovy.eclipse_2.1.2.xx-20110310-1500-e36.jar,4,false
 org.codehaus.groovy.eclipse.ant,2.1.2.xx-20110310-1500-e36,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.codehaus.groovy.eclipse.ant_2.1.2.xx-20110310-1500-e36/,4,false
 org.codehaus.groovy.eclipse.astviews,2.1.2.xx-20110310-1500-e36,file:/Applications/Eclipse%20Cloud%20Service%20Selection/plugins/org.codehaus.groovy.eclipse.astviews_2.1.2.xx-20110310-1500-e36.jar,4,false

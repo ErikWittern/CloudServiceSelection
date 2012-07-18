@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.ServicefeaturemodelModelWizardID"
+            name="%_UI_ServicefeaturemodelModelWizard_label"
+            class="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.ServicefeaturemodelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ServicefeaturemodelModelFile.gif">
+         <description>%_UI_ServicefeaturemodelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.ServicefeaturemodelEditorID"
+            name="%_UI_ServicefeaturemodelEditor_label"
+            icon="icons/full/obj16/ServicefeaturemodelModelFile.gif"
+            extensions="sfm"
+            class="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.ServicefeaturemodelEditor"
+            contributorClass="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.ServicefeaturemodelActionBarContributor">
+      </editor>
+   </extension>
+
+	<!-- Add "Service Feature Model" entry group and its entries to the pop up menu -->
+    <extension point="org.eclipse.ui.popupMenus">
+        <!-- add to editor context menu -->
+        <objectContribution
+            id="Plugin.EditorContribution"
+            objectClass="org.eclipse.ui.IEditorInput"
+            nameFilter="*.sfm">
+            <!-- add a menu item call "Service Feature Model" -->
+            <menu
+                label="Service Feature Model"
+                path="additions"
+                id="Plugin.EditorMenu">
+                <separator
+                    name="group">
+                </separator>
+            </menu>
+            <!-- add a sub menu item called "Trigger new evaluation..." -->
+            <!-- that calls the class edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.NewEvaluationWizardActionDelegate -->
+            <action
+                label="Trigger new evaluation..."
+                class="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.NewEvaluationWizardActionDelegate"
+                menubarPath="Plugin.EditorMenu/group"
+                enablesFor="1"
+                id="Plugin.TriggerNewEvaluation">
+            </action>
+            <!-- add a sub menu item called "Determine number of service configurations..." -->
+            <!-- that calls the class edu.kit.cockpit.sfmdesigner.servicefeaturemodel.analyzer.NumberOfServicesAnalysis -->
+            <action
+                label="Determine service configurations..."
+                class="edu.kit.cockpit.sfmdesigner.analyzer.controller.operations.DetermineServiceConfigurationsActionDelegate"
+                menubarPath="Plugin.EditorMenu/group"
+                enablesFor="1"
+                id="Plugin.DetermineServiceConfigurations">
+            </action>
+            <!-- add a sub menu item called "Manage existing evaluations..." -->
+            <!-- that calls the class edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.EvaluationManagementWizardActionDelegate -->
+            <action
+                label="Manage existing evaluations..."
+                class="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.EvaluationManagementWizardActionDelegate"
+                menubarPath="Plugin.EditorMenu/group"
+                enablesFor="1"
+                id="Plugin.ManageExistingEvaluations">
+            </action>
+            <!-- add a sub menu item called "Map Service Feature to GSM element..." -->
+            <!-- that calls the class edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.GSMMappingWizardActionDelegate -->
+            <!--
+            <action
+                label="Map Service Feature to GSM element..."
+                class="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.GSMMappingWizardActionDelegate"
+                menubarPath="Plugin.EditorMenu/group"
+                enablesFor="1"
+                id="Plugin.DoStuffAction">
+            </action>
+            -->
+            <!-- add a sub menu item called "Calculate cost..." -->
+            <!-- that calls the class edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.GSMMappingWizardActionDelegate -->
+            <!-- add a sub menu item called "Retrieve evaluation results..." -->
+            <!-- that calls the class edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.EvaluationResultsWizardActionDelegate -->
+            <action
+                label="Retrieve evaluation results..."
+                class="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.EvaluationResultsWizardActionDelegate"
+                menubarPath="Plugin.EditorMenu/group"
+                enablesFor="1"
+                id="Plugin.RetrieveEvaluationResults">
+            </action>
+            <action
+                label="Filter configurations for requirements..."
+                class="edu.kit.cockpit.sfmdesigner.requirementsfilter.RequirementsFilterWizardActionDelegate"
+                menubarPath="Plugin.EditorMenu/group"
+                enablesFor="1"
+                id="Plugin.RequirementsFilter">
+            </action>            
+        </objectContribution>
+    </extension>
+
+</plugin>

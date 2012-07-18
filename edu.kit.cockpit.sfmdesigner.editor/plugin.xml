@@ -45,7 +45,7 @@
             nameFilter="*.sfm">
             <!-- add a menu item call "Service Feature Model" -->
             <menu
-                label="Service Feature Model"
+                label="Cloud Feature Model"
                 path="additions"
                 id="Plugin.EditorMenu">
                 <separator
@@ -54,6 +54,7 @@
             </menu>
             <!-- add a sub menu item called "Trigger new evaluation..." -->
             <!-- that calls the class edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.NewEvaluationWizardActionDelegate -->
+            <!--
             <action
                 label="Trigger new evaluation..."
                 class="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.NewEvaluationWizardActionDelegate"
@@ -61,6 +62,7 @@
                 enablesFor="1"
                 id="Plugin.TriggerNewEvaluation">
             </action>
+            -->
             <!-- add a sub menu item called "Determine number of service configurations..." -->
             <!-- that calls the class edu.kit.cockpit.sfmdesigner.servicefeaturemodel.analyzer.NumberOfServicesAnalysis -->
             <action
@@ -72,6 +74,7 @@
             </action>
             <!-- add a sub menu item called "Manage existing evaluations..." -->
             <!-- that calls the class edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.EvaluationManagementWizardActionDelegate -->
+            <!--
             <action
                 label="Manage existing evaluations..."
                 class="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.EvaluationManagementWizardActionDelegate"
@@ -79,6 +82,7 @@
                 enablesFor="1"
                 id="Plugin.ManageExistingEvaluations">
             </action>
+            -->
             <!-- add a sub menu item called "Map Service Feature to GSM element..." -->
             <!-- that calls the class edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.GSMMappingWizardActionDelegate -->
             <!--
@@ -94,6 +98,7 @@
             <!-- that calls the class edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.GSMMappingWizardActionDelegate -->
             <!-- add a sub menu item called "Retrieve evaluation results..." -->
             <!-- that calls the class edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.EvaluationResultsWizardActionDelegate -->
+            <!--
             <action
                 label="Retrieve evaluation results..."
                 class="edu.kit.cockpit.sfmdesigner.servicefeaturemodel.presentation.EvaluationResultsWizardActionDelegate"
@@ -101,6 +106,7 @@
                 enablesFor="1"
                 id="Plugin.RetrieveEvaluationResults">
             </action>
+            -->
             <action
                 label="Filter configurations for requirements..."
                 class="edu.kit.cockpit.sfmdesigner.requirementsfilter.RequirementsFilterWizardActionDelegate"
