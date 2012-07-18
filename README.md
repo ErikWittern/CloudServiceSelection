@@ -11,10 +11,18 @@ The designer consists of three projects:
 * edu.kit.cockpit.sfmdesigner (contains meta model and corresponding model code)
 * edu.kit.cockpit.sfmdesigner.edit (contains item providers to edit model instances)
 * edu.kit.cockpit.sfmdesigner.editor (contains the Eclipse editor as plug-in and all application logic, i.e., configuration determination, requirements filter etc.)
- * Packages "analyzer" contain the engine to transfer Cloud Feature Models to constraint satisfaction problems (CSPs) and solve them. The analyzer is written in Groovy, thus requiring the above-stated Groovy plugin to be installed on the IDE from which the editor is started. 
- * Package "requirementsfilter" contains the logic to elicit the configurations of a given service model depending on the requirements stated in a given requirements model. 
- * Package "presentation" contains user interface for the editor. Especially, a wizard is provided that enables selection of service and requirements model for requirements elicitation.
 
+
+### Architecture
+The architecture of the Cloud Feature Modeling designer is illustrated in the following figure:
+
+# ![Architecture](https://dl.dropbox.com/u/9784913/Architecture.png)
+
+The Cloud Feature Model Designer consists of the following components:
+* CFM Modeling: This component provides the model code that defines the model elements and their relationships, based on the CFM Metamodel. The CFM API component allows to create and change model instances.
+* Modeling UI: This component provides the user interface that decision makers interact with to model Cloud Feature Models, namely the EMF Editor. The modeling UI makes use of the CFM API component to change model instances upon user interaction. The Modeling UI further provides means to trigger determination of configurations and a wizard to enable users to control the requirements filtering.
+* Model Analyzer: This component contains the engine to transfer Cloud Feature Models to constraint satisfaction problems (CSPs). The Reasoner is used to solve CSPs. The Feature Attribute Aggregator determines attribute values for each determined configurations. Configurations, including their attributes, are stored in the CFM by the Configuration Persistence. The analyzer is written in Groovy, thus requiring the below-stated Groovy plugin to be installed on the IDE from which the Cloud Feature Model Designer is started.
+* Requirements Filter: This component contains the logic to elicit the configurations of a given service model depending on the requirements stated in a given requirements model. The Requirements Extractor reads out all requirements stated in the requirements model. The Requirements Filter then matches these requirements with the configurations of the service model.
 
 ### Preliminaries to run the designer
 * Eclipse Modeling Tools (Helios v3.6, available at: http://www.eclipse.org/downloads/packages/release/helios/sr2)
