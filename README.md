@@ -15,10 +15,10 @@ The designer consists of three projects:
 
 
 ### Preliminaries to run the designer
-- Eclipse Modeling Tools (Helios v3.6, available at: http://www.eclipse.org/downloads/packages/release/helios/sr2)
-- Groovy-Eclipse Feature (v2.1.2.xx-20110310, available at Eclipse update site: http://dist.springsource.org/release/GRECLIPSE/e3.6/) including: "Groovy Compiler 1.6.7 Feature", "Groovy Compiler 1.7.8 Feature", "Groofy-Eclipse Headless Feature" and "JDT Core patch for Groovy-Eclipse plugin".
+* Eclipse Modeling Tools (Helios v3.6, available at: http://www.eclipse.org/downloads/packages/release/helios/sr2)
+* Groovy-Eclipse Feature (v2.1.2.xx-20110310, available at Eclipse update site: http://dist.springsource.org/release/GRECLIPSE/e3.6/) including: "Groovy Compiler 1.6.7 Feature", "Groovy Compiler 1.7.8 Feature", "Groovy-Eclipse Headless Feature" and "JDT Core patch for Groovy-Eclipse plugin".
 
 ### Instructions
-- Determination of configurations: Right-click on any element of the model in use and select "Cloud Feature Model/Determine service configurations...". Configurations are determined (including attribute aggregation) and the result is stored under the "Configurations" element of the model.
-- Filter Configurations regarding requirements: Right-click on any element of the model in use and select "Cloud Feature Model/Filter configurations for requirements...". In the wizard, select the requirements model and the service model to use. Clicking on "Finish" will produce the output of the requirements filtering the console of the development Eclipse instance.
+* Determination of configurations: Right-click on any element of the model in use and select "Cloud Feature Model/Determine service configurations...". Configurations are determined (including attribute aggregation) and the result is stored under the "Configurations" element of the model.
+* Filter Configurations regarding requirements: Right-click on any element of the model in use and select "Cloud Feature Model/Filter configurations for requirements...". In the wizard, select the requirements model and the service model to use. Clicking on "Finish" will produce the output of the requirements filtering the console of the development Eclipse instance.
 
